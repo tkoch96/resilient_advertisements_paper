@@ -31,6 +31,7 @@
 
 \definecolor{orange}{rgb}{1.0, 0.31, 0.0}
 
+\newcommand\eat[1]{}
 % terms
 \newcommand\noescape[1]{#1}
 
@@ -43,23 +44,27 @@
 % \newcommand{\metroas}{$\left<\texttt{region, AS}\right>$\xspace}
 % \newcommand{\metroasplural}{$\left<\texttt{region, AS}\right>es$\xspace}
 % \newcommand{\unenclmetroas}{\left<\texttt{region, AS}\right>}
-\newcommand{\metroas}{$\texttt{UG}$\xspace}
-\newcommand{\metroasplural}{$\texttt{UG}s$\xspace}
-\newcommand{\unenclmetroas}{\texttt{UG}}
+\newcommand{\ug}{$\texttt{UG}$\xspace}
+\newcommand{\servprod}{Service Provider\xspace}
+\newcommand{\servprods}{Service Providers\xspace}
+\newcommand{\ugs}{$\texttt{UG}s$\xspace}
+\newcommand{\unenclug}{\texttt{UG}}
 \newcommand{\peerprefix}{$\left<\texttt{peering, prefix}\right>$\xspace}
 \newcommand{\intfas}{$\left<\texttt{peering, UG AS}\right>$\xspace}
-\newcommand{\sysname}{\texttt{PAINTER}\xspace}
-\newcommand{\xuc}{\texttt{TM-Edge}\xspace}
-\newcommand{\xus}{\texttt{TM-PoP}\xspace}
 
-\newcommand{\ao}{\texttt{Advertisement Orchestrator}\xspace}
-\newcommand{\trm}{\texttt{Traffic Manager}\xspace}
+\newcommand\ucast{\texttt{unicast}\xspace}
+\newcommand\acast{\texttt{anycast}\xspace}
+\newcommand\scast{\texttt{selectivecast}\xspace}
+
 
 
 \NewDocumentCommand{\rotseventy}{O{70} O{1em} m}{\makebox[#2][l]{\rotatebox{#1}{#3}}}
 
 
 % Anonymized Commands
-\newcommand\msft{\texttt{Our\,Cloud}\xspace}
 \newcommand\sdwan{\texttt{SD-WAN}\xspace}
+\newcommand\sysname{\texttt{SCULPTOR}\xspace}
+\newcommand\anyopt{\texttt{AnyOpt}\xspace}
+\newcommand\painter{\texttt{PAINTER}\xspace}
+\newcommand\expensive{\texttt{One-per-Peering}\xspace}
 \newcommand\sdwanplural{\texttt{SD-WAN}s\xspace}

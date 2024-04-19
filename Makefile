@@ -9,7 +9,7 @@
 # (PYTHON is set from shell env variable, or with this default value)
 PYTHON ?= python
 
-NAME=painter
+NAME=resilience
 TARGET=$(NAME).pdf
 
 
@@ -18,8 +18,8 @@ TARGET=$(NAME).pdf
 # The author should add the accounts of everyone else to the project
 # ** I THINK ** everyone can use the same drive_api_key.json file (in git), but this may not be true
 # ***** THE ACCOUNT YOU ADD SHOULD ONLY HAVE VIEW PERMISSIONS OF THE FILE *******
-DOC_ID=1xK3MqCs0ZYbmCHajXX47NbGIovZ5bAbrrKHdfrRBjkA
-DOCS_LINK=https://docs.google.com/document/d/1EBzxkDG5RnHb13P8YJ9N326qq55QPolnuOM2POQjfek/export?format=txt
+DOC_ID=1JrtLtqPd_3-U8v5_us_3oGldaCXnXFMIPJbhuANdOXU
+DOCS_LINK=https://docs.google.com/document/d/1JrtLtqPd_3-U8v5_us_3oGldaCXnXFMIPJbhuANdOXU/export?format=txt
 
 # This line should not change; however, you can customize the template.tex for the conference
 #
