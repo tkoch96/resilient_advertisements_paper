@@ -1,9 +1,4 @@
-% \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
-
-\documentclass[letterpaper,twocolumn,10pt,sigconf,nonacm]{article}
-\usepackage{usenix}
-\RequirePackage[libertine]{newtxmath}
-
+\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
 $if(fontfamily)$
 \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
 $else$
@@ -47,15 +42,15 @@ $endif$
 \fi
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% % use microtype if available
-% \IfFileExists{microtype.sty}{%
+% use microtype if available
+\IfFileExists{microtype.sty}{%
 
 % use upquote if available, for straight quotes in verbatim environments
 % \IfFileExists{usenix.sty}{\usepackage{usenix}}{}
 
-% \usepackage{microtype}
-% \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
-% }{}
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
 $if(geometry)$
 \usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
 $endif$
@@ -100,11 +95,11 @@ $endfor$
 \fi
 $endif$
 $if(natbib)$
-\usepackage[square,numbers]{natbib}
+\usepackage{natbib}
 \bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
 $endif$
 $if(biblatex)$
-\usepackage[backend=bibtex,hyperref=true,style=numeric,backref=false,maxnames=99,style=trad-abbrv,firstinits=true]{biblatex}
+\usepackage[backend=bibtex,hyperref=true,backref=false,maxnames=99,style=trad-abbrv,firstinits=true]{biblatex}
 $for(bibliography)$
 \addbibresource{$bibliography$}
 $endfor$
@@ -199,20 +194,15 @@ $author$
 $endif$
 $endfor$
 
-\author{
-\normalfont
-Paper \#559, 12 pages body, 19 pages total \\
-}
-
 \date{$date$}
 $for(header-includes)$
 $header-includes$
 $endfor$
-% \setcopyright{none}
-% \settopmatter{printacmref=false}
-% \renewcommand\footnotetextcopyrightpermission[1]{}
-% \pagestyle{plain}
-% \settopmatter{printacmref=false, printccs=false, printfolios=true}
+\setcopyright{none}
+\settopmatter{printacmref=false}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+\pagestyle{plain}
+\settopmatter{printacmref=false, printccs=false, printfolios=true}
 
 
 % REMOVE THIS BEFORE SUBMISSION
