@@ -327,7 +327,6 @@
   booktitle={ICDCS 2022}
 }
 
-
 % Misc Papers
 @inproceedings{mptcp-huawei,
   title={{Experience: A Three-Year Retrospective of Large-Scale Multipath Transport Deployment for Mobile Applications}},
@@ -343,6 +342,50 @@
   title={{Towards a Tectonic Traffic Shift? Investigating Apple's New Relay Network}},
   author={Sattler, Patrick and Aulbach, Juliane and Zirngibl, Johannes and Carle, Georg},
   booktitle={IMC 2022}
+}
+@inproceedings{anwar2015investigating,
+  title={Investigating interdomain routing policies in the wild},
+  author={Anwar, Ruwaifa and Niaz, Haseeb and Choffnes, David and Cunha, {\'I}talo and Gill, Phillipa and Katz-Bassett, Ethan},
+  booktitle={IMC 2015},
+}
+@inproceedings{dhamdhere2018inferring,
+  title={Inferring persistent interdomain congestion},
+  author={Dhamdhere, Amogh and Clark, David D and Gamero-Garrido, Alexander and Luckie, Matthew and Mok, Ricky KP and Akiwate, Gautam and Gogia, Kabir and Bajpai, Vaibhav and Snoeren, Alex C and Claffy, Kc},
+  booktitle={Proceedings of the 2018 Conference of the ACM Special Interest Group on Data Communication},
+  pages={1--15},
+  year={2018}
+}
+@inproceedings{dchannel,
+  title={{DCHANNEL}: Accelerating Mobile Applications With Parallel High-bandwidth and Low-latency Channels},
+  author={Sentosa, William and Chandrasekaran, Balakrishnan and Godfrey, P Brighten and Hassanieh, Haitham and Maggs, Bruce},
+  booktitle={NSDI 2023},
+}
+@article{tgaming,
+  title={{T-gaming: A cost-efficient cloud gaming system at scale}},
+  author={Chen, Hao and Zhang, Xu and Xu, Yiling and Ren, Ju and Fan, Jingtao and Ma, Zhan and Zhang, Wenjun},
+  journal={IEEE Transactions on Parallel and Distributed Systems},
+  year={2019},
+}
+@inproceedings{virtue-gentle-aggression,
+  title={Reducing web latency: the virtue of gentle aggression},
+  author={Flach, Tobias and Dukkipati, Nandita and Terzis, Andreas and Raghavan, Barath and Cardwell, Neal and Cheng, Yuchung and Jain, Ankur and Hao, Shuai and Katz-Bassett, Ethan and Govindan, Ramesh},
+  booktitle={SIGCOMM 2013},
+}
+@inproceedings{google-protective-reroute,
+  title={Improving Network Availability with Protective ReRoute},
+  author={Wetherall, David and Kabbani, Abdul and Jacobson, Van and Winget, Jim and Cheng, Yuchung and Morrey III, Charles B and Moravapalle, Uma and Gill, Phillipa and Knight, Steven and Vahdat, Amin},
+  booktitle={SIGCOMM 2023},
+}
+@article{sermpezis2019inferring,
+  title={Inferring catchment in internet routing},
+  author={Sermpezis, Pavlos and Kotronis, Vasileios},
+  booktitle={Proceedings of the ACM on Measurement and Analysis of Computing Systems},
+  year={2019},
+}
+@article{muhlbauer2006building,
+  title={Building an AS-topology model that captures route diversity},
+  author={M{\"u}hlbauer, Wolfgang and Feldmann, Anja and Maennel, Olaf and Roughan, Matthew and Uhlig, Steve},
+  journal={SIGCOMM 2006},
 }
 
 @inproceedings{akella-multihoming-nsdi-04,
@@ -611,6 +654,44 @@ title={{NIRA: A New Inter-Domain Routing Architecture}},
   year={2018},
 }
 
+%%% intradomain resilience
+@inproceedings{r3,
+  title={R3: resilient routing reconfiguration},
+  author={Wang, Ye and Wang, Hao and Mahimkar, Ajay and Alimi, Richard and Zhang, Yin and Qiu, Lili and Yang, Yang Richard},
+  booktitle={SIGCOMM 2010},
+}
+@article{lancet,
+  title={Lancet: Better network resilience by designing for pruned failure sets},
+  author={Chang, Yiyang and Jiang, Chuan and Chandra, Ashish and Rao, Sanjay and Tawarmalani, Mohit},
+  booktitle={Measurement and Analysis of Computing Systems},
+  year={2019},
+}
+@inproceedings{ffc,
+  title={Traffic engineering with forward fault correction},
+  author={Liu, Hongqiang Harry and Kandula, Srikanth and Mahajan, Ratul and Zhang, Ming and Gelernter, David},
+  booktitle={SIGCOMM 2014},
+}
+@inproceedings{pcf,
+  title={{PCF: provably resilient flexible routing}},
+  author={Jiang, Chuan and Rao, Sanjay and Tawarmalani, Mohit},
+  booktitle={SIGCOMM 2020},
+}
+
+%%% Optimization stuff
+@article{langer2021approximating,
+  title={Approximating smooth functions by deep neural networks with sigmoid activation function},
+  author={Langer, Sophie},
+  journal={Journal of Multivariate Analysis 2021},
+  year={2021},
+}
+@article{shechtman2014gespar,
+  title={GESPAR: Efficient phase retrieval of sparse signals},
+  author={Shechtman, Yoav and Beck, Amir and Eldar, Yonina C},
+  journal={IEEE transactions on signal processing},
+  year={2014},
+}
+
+
 %% 5g mobile provider with cloud integration products
 @misc{verizon-aws,
   title={{Architecting Geo-Distributed Mobile Edge Application With Consul}},
@@ -707,6 +788,19 @@ url={https://independent.co.uk/tech/fortnite-twitter-b2442476.html},
 year={2023},
 author={Landi, Martyn},
 title={{Return of original Fortnite map causes record traffic on Virgin Media O2 network}}
+}
+
+@misc{netflix-squid-game-dispute,
+  url={https://theverge.com/2023/9/18/23879475/netflix-squid-game-sk-broadband-partnership},
+  title={Netflix ends a three-year legal dispute over Squid Game traffic},
+  author={Davis, Wes},
+  year={2023}
+}
+@misc{ntt-cogent-peering-dispute,
+url={https://thinkbroadband.com/news/9896-ntt-cogent-peering-dispute-increasing-latency-for-some-routes},
+title={{NTT/Cogent peering dispute increasing latency for some routes}},
+year={2024},
+publisher={Think Broadband}
 }
 
 %%% Route Changes
@@ -1011,6 +1105,13 @@ year={2022}
 }
 
 %% MPTCP 
+@misc{ubuntu22-mptcp,
+url={https://medium.com/high-performance-network-programming/how-to-setup-and-configure-mptcp-on-ubuntu-c423dbbf76cc},
+title={How to setup and configure mptcp on Ubuntu},
+author={Gartner, Marten},
+year={2022}
+}
+
 @misc{apple-mptcp,
 url={https://developer.apple.com/documentation/foundation/urlsessionconfiguration/improving_network_reliability_using_multipath_tcp},
 title={{Improving Network Reliability Using Multipath TCP}},
