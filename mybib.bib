@@ -7,759 +7,1037 @@
 @string{internet-rfc = "Internet Request For Comments"};
 
 
-% Microsoft / Matt
+% Microsoft
+@inproceedings{blast-shield,
+  title={{Decentralized cloud wide-area network traffic engineering with BLASTSHIELD}},
+  author={Krishnaswamy, Umesh and Singh, Rachee and Bj{\o}rner, Nikolaj and Raj, Himanshu},
+  booktitle={NSDI 2022},
+}
 @inproceedings{calder2015analyzing,
-  title={Analyzing the Performance of an Anycast {CDN}},
+  title={{Analyzing the Performance of an Anycast CDN}},
   author={Calder, Matt and Flavel, Ashley and Katz-Bassett, Ethan and Mahajan, Ratul and Padhye, Jitendra},
-  booktitle={IMC},
-  year={2015},
+  booktitle={IMC 2015}
 }
 @inproceedings{odin,
-  title={Odin: Microsoft’s Scalable Fault-Tolerant {CDN} Measurement System},
+  title={{Odin: Microsoft’s Scalable Fault-Tolerant CDN Measurement System}},
   author={Calder, Matt and Gao, Ryan and Schr{\"o}der, Manuel and Stewart, Ryan and Padhye, Jitendra and Mahajan, Ratul and Ananthanarayanan, Ganesh and Katz-Bassett, Ethan},
-  booktitle={NSDI},
-  pages={501--517},
-  year={2018}
+  booktitle={NSDI 2018}
+}
+@inproceedings{ganesh-skype,
+  title={{Via: Improving Internet Telephony Call Quality Using Predictive Relay Selection}},
+  author={Jiang, Junchen and Das, Rajdeep and Ananthanarayanan, Ganesh and Chou, Philip A and Padmanabhan, Venkata and Sekar, Vyas and Dominique, Esbjorn and Goliszewski, Marcin and Kukoleca, Dalibor and Vafin, Renat and others},
+  booktitle={SIGCOMM 2016}
 }
 @inproceedings{chiu2015we,
-  title={Are We One Hop away from a better internet?\killpunct},
+  title={{Are We One Hop Away from a Better Internet}?\killpunct},
   author={Chiu, Yi-Ching and Schlinker, Brandon and Radhakrishnan, Abhishek Balaji and Katz-Bassett, Ethan and Govindan, Ramesh},
-  booktitle={IMC},
-  year={2015}
+  booktitle={IMC 2015}
 }
 @inproceedings{fastroute,
-  title={Fastroute: A Scalable Load-Aware Anycast Routing Architecture for Modern {CDN}s},
+  title={{FastRoute: A Scalable Load-Aware Anycast Routing Architecture for Modern CDNs}},
   author={Flavel, Ashley and Mani, Pradeepkumar and Maltz, David and Holt, Nick and Liu, Jie and Chen, Yingying and Surmachev, Oleg},
-  booktitle={NSDI},
-  year={2015}
+  booktitle={NSDI 2015}
 }
 @inproceedings{flavel-dns-control,
-  title={Re-{E}valuating the Responsiveness of {DNS}-Based Network Control},
+  title={{Re-Evaluating the Responsiveness of DNS-Based Network Control}},
   author={Flavel, Ashley and Mani, Pradeepkumar and Maltz, David A},
-  booktitle={LANMAN},
-  year={2014},
+  booktitle={LANMAN 2014}
 }
 @inproceedings{mapping-google,
-  title={Mapping the Expansion of {G}oogle's Serving Infrastructure},
+  title={{Mapping the Expansion of Google's Serving Infrastructure}},
   author={Calder, Matt and Fan, Xun and Hu, Zi and Katz-Bassett, Ethan and Heidemann, John and Govindan, Ramesh},
-  booktitle={IMC},
-  year={2013}
+  booktitle={IMC 2013}
 }
 @inproceedings{swan,
-  title={Achieving High Utilization with Software-Driven {WAN}},
+  title={{Achieving High Utilization with Software-Driven WAN}},
   author={Hong, Chi-Yao and Kandula, Srikanth and Mahajan, Ratul and Zhang, Ming and Gill, Vijay and Nanduri, Mohan and Wattenhofer, Roger},
-  booktitle={SIGCOMM},
-  year={2013}
+  booktitle={SIGCOMM 2013}
 }
 @inproceedings{calder-ecs-adoption,
-  title={A Cloud Provider’s View of {EDNS} Client-Subnet Adoption},
+  title={{A Cloud Provider’s View of EDNS Client-Subnet Adoption}},
   author={Calder, Matt and Fan, Xun and Zhu, Liang},
-  booktitle={TMA},
-  year={2019},
+  booktitle={TMA 2019}
 }
 @inproceedings{footprint-microsoft,
-  title={Efficiently Delivering Online Services over Integrated Infrastructure},
+  title={{Efficiently Delivering Online Services over Integrated Infrastructure}},
   author={Liu, Hongqiang Harry and Viswanathan, Raajay and Calder, Matt and Akella, Aditya and Mahajan, Ratul and Padhye, Jitendra and Zhang, Ming},
-  booktitle={NSDI},
-  year={2016}
+  booktitle={NSDI 2016}
+}
+@inproceedings{dote,
+  title={{DOTE: Rethinking (Predictive) WAN Traffic Engineering}},
+  author={Perry, Yarin and Frujeri, Felipe Vieira and Hoch, Chaim and Kandula, Srikanth and Menache, Ishai and Schapira, Michael and Tamar, Aviv},
+  booktitle={NSDI 2023},
 }
 @inproceedings{cascara,
-  title={Cost-effective Cloud Edge Traffic Engineering with Cascara.},
+  title={{Cost-Effective Cloud Edge Traffic Engineering with Cascara}},
   author={Singh, Rachee and Agarwal, Sharad and Calder, Matt and Bahl, Paramvir},
-  booktitle={NSDI},
-  year={2021}
+  booktitle={NSDI 2021}
 }
 @inproceedings{entact,
-  title={Optimizing Cost and Performance in Online Service Provider Networks.},
-  author={Zhang, Zheng and Zhang, Ming and Greenberg, Albert G and Hu, Y Charlie and Mahajan, Ratul and Christian, Blaine},
-  booktitle={NSDI},
-  year={2010}
+  title={{Optimizing Cost and Performance in Online Service Provider Networks}},
+  author={Zhang, Zheng and Zhang, Ming and Greenberg, Albert G. and Hu, Y. Charlie and Mahajan, Ratul and Christian, Blaine},
+  booktitle={NSDI 2010}
 }
 @inproceedings{tipsy,
-  title={{TIPSY}: predicting where traffic will ingress a WAN},
+  title={{TIPSY: Predicting Where Traffic Will Ingress a WAN}},
   author={Markovitch, Michael and Agarwal, Sharad and Fonseca, Rodrigo and Beckett, Ryan and Zhang, Chuanji and Atov, Irena and Chaturmohta, Somesh},
-  booktitle={SIGCOMM},
-  year={2022}
+  booktitle={SIGCOMM 2022}
+}
+@incollection{jin2019zooming,
+  title={{Zooming in on wide-area latencies to a global cloud provider}},
+  author={Jin, Yuchen and Renganathan, Sundararajan and Ananthanarayanan, Ganesh and Jiang, Junchen and Padmanabhan, Venkata N and Schroder, Manuel and Calder, Matt and Krishnamurthy, Arvind},
+  booktitle={SIGCOMM 2019},
 }
 
 % Facebook
+@inproceedings{hose-benders-facebook,
+  title={Hose-based cross-layer backbone network design with Benders decomposition},
+  author={Eason, John P and He, Xueqi and Cziva, Richard and Noormohammadpour, Max and Balasubramanian, Srivatsan and Ahuja, Satyajeet Singh and Lu, Biao},
+  booktitle={SIGCOMM 2023},
+}
 @inproceedings{edge-fabric,
-  title={Engineering egress with edge fabric: Steering oceans of content to the world},
-  author={Schlinker, Brandon and Kim, Hyojeong and Cui, Timothy and Katz-Bassett, Ethan and Madhyastha, Harsha V and Cunha, Italo and Quinn, James and Hasan, Saif and Lapukhov, Petr and Zeng, Hongyi},
-  booktitle={SIGCOMM},
-  year={2017}
+  title={{Engineering Egress with Edge Fabric: Steering Oceans of Content to the World}},
+  author={Schlinker, Brandon and Kim, Hyojeong and Cui, Timothy and Katz-Bassett, Ethan and Madhyastha, Harsha V. and Cunha, Italo and Quinn, James and Hasan, Saif and Lapukhov, Petr and Zeng, Hongyi},
+  booktitle={SIGCOMM 2017}
 }
 @inproceedings{brandon-facebook-imc,
-  title={Internet Performance from Facebook's Edge},
+  title={{Internet Performance from Facebook's Edge}},
   author={Schlinker, Brandon and Cunha, Italo and Chiu, Yi-Ching and Sundaresan, Srikanth and Katz-Bassett, Ethan},
-  booktitle={IMC},
-  year={2019}
+  booktitle={IMC 2019}
 }
 @inproceedings{facebook-covid,
-  title={How the Internet reacted to {COVID}-19: A Perspective from Facebook's Edge Network},
+  title={{How the Internet Reacted to COVID-19: A Perspective from Facebook's Edge Network}},
   author={B{\"o}ttger, Timm and Ibrahim, Ghida and Vallis, Ben},
-  booktitle={IMC},
-  year={2020}
+  booktitle={IMC 2020}
+}
+@misc{msft-ingress-numbers,
+  url={https://learn.microsoft.com/en-us/azure/networking/microsoft-global-network},
+  title={{Microsoft Global Network}},
+  author={Microsoft},
+  year={2023}
+}
+@misc{msft-wan-numbers,
+  url={https://datacenters.microsoft.com/},
+  title={{Microsoft Datacenters}},
+  author={Microsoft},
+  year={2023}
+}
+@inproceedings{taiji,
+  title={{Taiji: Managing Global User Traffic for Large-Scale Internet Services at the Edge}},
+  author={Chou, David and Xu, Tianyin and Veeraraghavan, Kaushik and Newell, Andrew and Margulis, Sonia and Xiao, Lin and Ruiz, Pol Mauri and Meza, Justin and Ha, Kiryong and Padmanabha, Shruti and others},
+  booktitle={SOSP 2019}
+}
+@misc{msft-peeringdb,
+  title={{PeeringDB Microsoft}},
+  url={https://peeringdb.com/net/694},
+  author={PeeringDB},
+  year={2023}
+}
+@inproceedings{facebook-capacity-planning,
+  title={Capacity-efficient and uncertainty-resilient backbone network planning with hose},
+  author={Ahuja, Satyajeet Singh and Gupta, Varun and Dangui, Vinayak and Bali, Soshant and Gopalan, Abishek and Zhong, Hao and Lapukhov, Petr and Xia, Yiting and Zhang, Ying},
+  booktitle={SIGCOMM 2021},
 }
 
 % Google
+@inproceedings{thinking-about-availability,
+  title={Thinking about availability in large service infrastructures},
+  author={Mogul, Jeffrey C and Isaacs, Rebecca and Welch, Brent},
+  booktitle={HotOS 2017},
+}
 @inproceedings{espresso,
-  title={Taking the Edge off with Espresso: Scale, Reliability and Programmability for Global Internet Peering},
+  title={{Taking the Edge off with Espresso: Scale, Reliability and Programmability for Global Internet Peering}},
   author={Yap, Kok-Kiong and Motiwala, Murtaza and Rahe, Jeremy and Padgett, Steve and Holliman, Matthew and Baldus, Gary and Hines, Marcus and Kim, Taeeun and Narayanan, Ashok and Jain, Ankur and others},
-  booktitle={SIGCOMM},
-  year={2017}
+  booktitle={SIGCOMM 2017}
+}
+@inproceedings{google-capa-nsdi,
+  title={{CAPA: An Architecture For Operating Cluster Networks With High Availability}},
+  author={Liu, Bingzhe and Scott, Colin and Tariq, Mukarram and Ferguson, Andrew and Gill, Phillipa and Alimi, Richard and Alipourfard, Omid and Arulkannan, Deepak and Beauregard, Virginia Jean and Conner, Patrick and others},
+  booktitle={NSDI 2024},
+}
+@inproceedings{evolve-or-die,
+  title={Evolve or die: High-availability design principles drawn from googles network infrastructure},
+  author={Govindan, Ramesh and Minei, Ina and Kallahalla, Mahesh and Koley, Bikash and Vahdat, Amin},
+  booktitle={SIGCOMM 2016},
 }
 @inproceedings{whyhigh,
-  title={Moving Beyond End-to-End Path Information to Optimize {CDN} Performance},
-  author={Krishnan, Rupa and Madhyastha, Harsha V and Srinivasan, Sridhar and Jain, Sushant and Krishnamurthy, Arvind and Anderson, Thomas and Gao, Jie},
-  booktitle={SIGCOMM},
-  year={2009}
+  title={{Moving Beyond End-to-End Path Information to Optimize CDN Performance}},
+  author={Krishnan, Rupa and Madhyastha, Harsha V. and Srinivasan, Sridhar and Jain, Sushant and Krishnamurthy, Arvind and Anderson, Thomas and Gao, Jie},
+  booktitle={IMC 2009}
 }
 @inproceedings{quic,
-  title={The {QUIC} Transport protocol: Design and internet-scale deployment},
+  title={{The QUIC Transport Protocol: Design and Internet-Scale Deployment}},
   author={Langley, Adam and Riddoch, Alistair and Wilk, Alyssa and Vicente, Antonio and Krasic, Charles and Zhang, Dan and Yang, Fan and Kouranov, Fedor and Swett, Ian and Iyengar, Janardhan and others},
-  booktitle={SIGCOMM},
-  year={2017}
+  booktitle={SIGCOMM 2017}
 }
 
 @inproceedings{b4-after,
-  title={B4 and after: managing hierarchy, partitioning, and asymmetry for availability and scale in google's software-defined {WAN}},
+  title={{B4 and After: Managing Hierarchy, Partitioning, and Asymmetry for Availability and Scale in Google's Software-Defined WAN}},
   author={Hong, Chi-Yao and Mandal, Subhasree and Al-Fares, Mohammad and Zhu, Min and Alimi, Richard and Bhagat, Chandan and Jain, Sourabh and Kaimal, Jay and Liang, Shiyu and Mendelev, Kirill and others},
-  booktitle={SIGCOMM},
-  year={2018}
+  booktitle={SIGCOMM 2018}
 }
 
 @inproceedings{b4,
-  title={B4: Experience with a globally-deployed software defined {WAN}},
+  title={{B4: Experience with a Globally-Deployed Software Defined WAN}},
   author={Jain, Sushant and Kumar, Alok and Mandal, Subhasree and Ong, Joon and Poutievski, Leon and Singh, Arjun and Venkata, Subbaiah and Wanderer, Jim and Zhou, Junlan and Zhu, Min and others},
-  booktitle={SIGCOMM},
-  year={2013},
+  booktitle={SIGCOMM 2013}
 }
 
 % Akamai
 @inproceedings{end-user-mapping,
-  title={End-user mapping: Next generation request routing for content delivery},
-  author={Chen, Fangfei and Sitaraman, Ramesh K and Torres, Marcelo},
-  booktitle={SIGCOMM},
-  year={2015},
+  title={{End-User Mapping: Next Generation Request Routing for Content Delivery}},
+  author={Chen, Fangfei and Sitaraman, Ramesh K. and Torres, Marcelo},
+  booktitle={SIGCOMM 2015}
 }
 
 % Anycast
+@inproceedings{regional-anycast,
+  title={{Regional IP Anycast: Deployments, Performance, and Potentials}},
+  author={Zhou, Minyuan and Zhang, Xiao and Hao, Shuai and Yang, Xiaowei and Zheng, Jiaqi and Chen, Guihai and Dou, Wanchun},
+  booktitle={SIGCOMM 2023}
+  
+}
 @inproceedings{de2017anycast,
-  title={Anycast latency: How many sites are enough?\killpunct},
+  title={{Anycast Latency: How Many Sites are Enough?\killpunct}},
   author={de Oliveira Schmidt, Ricardo and Heidemann, John and Kuipers, Jan Harm},
-  booktitle={PAM},
-  year={2017},
+  booktitle={PAM 2017}
 }
 @inproceedings{ballani2006measurement,
-  title={A measurement-based deployment proposal for {IP} anycast},
+  title={{A Measurement-Based Deployment Proposal for {IP} Anycast}},
   author={Ballani, Hitesh and Francis, Paul and Ratnasamy, Sylvia},
-  booktitle={SIGCOMM},
-  year={2006}
+  booktitle={SIGCOMM 2006}
 }
 @inproceedings{anyopt,
-  title={{AnyOpt}: predicting and optimizing {IP} Anycast performance},
-  author={Zhang, Xiao and Sen, Tanmoy and Zhang, Zheyuan and April, Tim and Chandrasekaran, Balakrishnan and Choffnes, David and Maggs, Bruce M and Shen, Haiying and Sitaraman, Ramesh K and Yang, Xiaowei},
-  booktitle={SIGCOMM},
-  year={2021}
+  title={{AnyOpt: Predicting and Optimizing IP Anycast Performance}},
+  author={Zhang, Xiao and Sen, Tanmoy and Zhang, Zheyuan and April, Tim and Chandrasekaran, Balakrishnan and Choffnes, David and Maggs, Bruce M. and Shen, Haiying and Sitaraman, Ramesh K. and Yang, Xiaowei},
+  booktitle={SIGCOMM 2021}
 }
 @inproceedings{baup,
-  title={Bidirectional {Anycast/Unicast} Probing ({BAUP}): Optimizing {CDN} Anycast},
+  title={{Bidirectional Anycast/Unicast Probing (BAUP): Optimizing CDN Anycast}},
   author={Wei, Lan and Flores, Marcel and Bedi, Harkeerat and Heidemann, John},
-  booktitle={NOMS},
-  year={2020}
+  booktitle={NOMS 2020}
 }
 @inproceedings{tom-anycast,
-  title={Anycast in context: A tale of two systems},
+  title={{Anycast in Context: A Tale of Two Systems}},
   author={Koch, Thomas and Katz-Bassett, Ethan and Heidemann, John and Calder, Matt and Ardi, Calvin and Li, Ke},
-  booktitle={Proceedings of the 2021 ACM SIGCOMM 2021 Conference},
-  year={2021}
+  booktitle={SIGCOMM 2021}
+}
+@inproceedings{painter,
+  title={{PAINTER: Ingress Traffic Engineering and Routing for Enterprise Cloud Networks}},
+  author={Koch, Thomas and Yu, Shuyue and Katz-Bassett, Ethan and Beckett, Ryan and Agarwal, Sharad},
+  booktitle={SIGCOMM 2023}
 }
 @inproceedings{anycast-ppp,
-  title={Internet Anycast: Performance, Problems, \& Potential},
+  title={{Internet Anycast: Performance, Problems, \& Potential}},
   author={Li, Zhihao and Levin, Dave and Spring, Neil and Bhattacharjee, Bobby},
-  booktitle={SIGCOMM},
-  year={2018},
+  booktitle={SIGCOMM 2018}
 }
 @inproceedings{cachefly-anycast,
-  title={A First Characterization of Anycast Traffic from Passive Traces},
+  title={{A First Characterization of Anycast Traffic from Passive Traces}},
   author={Giordano, Danilo and Cicalese, Danilo and Finamore, Alessandro and Mellia, Marco and Munaf{\`o}, Maurizio and Joumblatt, Diana Zeaiter and Rossi, Dario},
-  booktitle={TMA},
-  year={2016},
+  booktitle={TMA 2016}
 }
 @inproceedings{cicalese2015characterizing,
-  title={Characterizing {IPv4} Anycast Adoption and Deployment},
+  title={{Characterizing IPv4 Anycast Adoption and Deployment}},
   author={Cicalese, Danilo and Aug{\'e}, Jordan and Joumblatt, Diana and Friedman, Timur and Rossi, Dario},
-  booktitle={CoNEXT},
-  year={2015},
+  booktitle={CoNEXT 2015}
 }
 @misc{edgecast_anycast,
  author={Verizon},
  title={Edgecast},
- url={verizondigitalmedia.com/media-platform/delivery/network/},
+ url={https://verizondigitalmedia.com/media-platform/delivery/network/},
  year={2020}
 }
 @misc{cloudflare_anycast,
- title={Load Balancing without Load Balancers},
+ title={{Load Balancing without Load Balancers}},
  author={Prince, Matthew},
  publisher={Cloudflare},
-  url={blog.cloudflare.com/cloudflares-architecture-eliminating-single-p/},
+  url={https://blog.cloudflare.com/cloudflares-architecture-eliminating-single-p/},
   year={2013}
 }
 @inproceedings{huawei_evaluating_anycast,
-  title={Evaluating Performance and Inefficient Routing of an Anycast {CDN}},
+  title={{Evaluating Performance and Inefficient Routing of an Anycast CDN}},
   author={Xue, Jing'an and Dang, Weizhen and Wang, Haibo and Wang, Jilong and Wang, Hui},
-  booktitle={Proceedings of the International Symposium on Quality of Service},
-  year={2019},
+  booktitle={International Symposium on Quality of Service 2019}
 }
 @inproceedings{moura2016anycast,
-  title={Anycast vs. {DDoS}: Evaluating the November 2015 Root {DNS} Event},
+  title={{Anycast vs. DDoS: Evaluating the November 2015 Root DNS Event}},
   author={Moura, Giovane C. M. and Schmidt, Ricardo de Oliveira and Heidemann, John and de Vries, Wouter B. and Muller, Moritz and Wei, Lan and Hesselman, Cristian},
-  booktitle={IMC},
-  year={2016},
+  booktitle={IMC 2016}
 }
 @inproceedings{mcquistin2019taming,
-  title={Taming Anycast in the Wild Internet},
+  title={{Taming Anycast in the Wild Internet}},
   author={McQuistin, Stephen and Uppu, Sree Priyanka and Flores, Marcel},
-  booktitle={IMC},
-  year={2019},
+  booktitle={IMC 2019}
 }
 @inproceedings{sun2015scalable,
-  title={Scalable programmable inbound traffic engineering},
+  title={{Scalable Programmable Inbound Traffic Engineering}},
   author={Sun, Peng and Vanbever, Laurent and Rexford, Jennifer},
-  booktitle={SOSR},
-  year={2015}
+  booktitle={SOSR 2015}
 }
 @inproceedings{att-handover,
-  title={{VPMN}: virtual private mobile network towards mobility-as-a-service},
+  title={{VPMN: Virtual Private Mobile Network Towards Mobility-as-a-Service}},
   author={Baliga, Arati and Chen, Xu and Coskun, Baris and de los Reyes, Gustavo and Lee, Seungjoon and Mathur, Suhas and Van der Merwe, Jacobus E},
-  booktitle={MCS},
-  year={2011}
+  booktitle={MCS 2011}
 }
 @inproceedings{mobile-cloud,
-  title={Mobi{S}cud: A fast moving personal cloud in the mobile network},
+  title={{MobiScud: A Fast Moving Personal Cloud in the Mobile Network}},
   author={Wang, Kaiqiang and Shen, Minwei and Cho, Junguk and Banerjee, Arijit and Van der Merwe, Jacobus and Webb, Kirk},
-  booktitle={AllThingsCelluluar},
-  year={2015}
+  booktitle={AllThingsCellular 2015}
 }
 @inproceedings{anycast-playbook,
-  title={Anycast Agility: Network Playbooks to Fight {DDoS}},
+  title={{Anycast Agility: Network Playbooks to Fight DDoS}},
   author={Rizvi, ASM and Bertholdo, Leandro and Ceron, Jo{\~a}o and Heidemann, John},
-  booktitle={USENIX Security Symposium},
-  year={2022}
+  booktitle={USENIX Security Symposium 2022}
 }
 
 
 % COVID
 @inproceedings{lockdown-effect,
-  title={Implications of the {COVID}-19 Pandemic on the Internet Traffic},
+  title={{Implications of the COVID-19 Pandemic on the Internet Traffic}},
   author={Feldmann, Anja and Gasser, Oliver and Lichtblau, Franziska and Pujol, Eric and Poese, Igmar and Dietzel, Christoph and Wagner, Daniel and Wichtlhuber, Matthias and Tapiador, Juan and Vallina-Rodriguez, Narseo and others},
-  booktitle={IMC},
-  year={2020}
+  booktitle={IMC 2020}
 }
 @inproceedings{covid-mobile-network,
-  title={A characterization of the {COVID}-19 pandemic impact on a mobile network operator traffic},
+  title={{A Characterization of the COVID-19 Pandemic Impact on a Mobile Network Operator Traffic}},
   author={Lutu, Andra and Perino, Diego and Bagnulo, Marcelo and Frias-Martinez, Enrique and Khangosstar, Javad},
-  booktitle={IMC},
-  year={2020}
+  booktitle={IMC 2020}
 }
 
-% Misc Papers
-@inproceedings{akella-multihoming-nsdi-04,
-  title={Multihoming Performance Benefits: An Experimental Evaluation of Practical Enterprise Strategies},
-  author={Akella, Aditya and Seshan, Srinivasan and Shaikh, Anees},
-  booktitle={NSDI},
-  year={2004}
+# Routing table compression
+@inproceedings{poptrie,
+  title={{Poptrie: A Compressed Trie with Population Count for Fast and Scalable Software IP Routing Table Lookup}},
+  author={Asai, Hirochika and Ohara, Yasuhiro},
+  booktitle={SIGCOMM 2015}
 }
-@inproceedings{ontas,
-  title={{ONTAS}: Flexible and scalable online network traffic anonymization system},
-  author={Kim, Hyojoon and Gupta, Arpit},
-  booktitle={Workshop on Network Meets AI \& ML},
+@article{ship,
+  title={{SHIP: A Scalable High-Performance IPv6 Lookup Algorithm that Exploits Prefix Characteristics}},
+  author={Stimpfling, Thibaut and Belanger, Normand and Langlois, JM Pierre and Savaria, Yvon},
+  journal={ToN},
   year={2019}
 }
+@inproceedings{smalta,
+  title={{SMALTA: Practical and Near-Optimal FIB Aggregation}},
+  author={Uzmi, Zartash Afzal and Nebel, Markus and Tariq, Ahsan and Jawad, Sana and Chen, Ruichuan and Shaikh, Aman and Wang, Jia and Francis, Paul},
+  booktitle={CoNEXT 2011}
+}
+@inproceedings{neurotrie,
+  title={{Neurotrie: Deep Reinforcement Learning-Based Fast Software IPv6 Lookup}},
+  author={Chen, Hao and Yang, Yuan and Xu, Mingwei and Zhang, Yuxuan and Liu, Chenyi},
+  booktitle={ICDCS 2022}
+}
+
+
+% Misc Papers
+@inproceedings{mptcp-huawei,
+  title={{Experience: A Three-Year Retrospective of Large-Scale Multipath Transport Deployment for Mobile Applications}},
+  author={Wang, Chengke and Wang, Hao and Qian, Feng and Zheng, Kai and Wang, Chenglu and Mao, Fangzhu and Guo, Xingmin and Xu, Chenren},
+  booktitle={MobiCom 2023}
+}
+@inproceedings{alibaba-mpquic,
+  title={{Xlink: QoE-Driven Multi-Path QUIC Transport in Large-Scale Video Services}},
+  author={Zheng, Zhilong and Ma, Yunfei and Liu, Yanmei and Yang, Furong and Li, Zhenyu and Zhang, Yuanbo and Zhang, Jiuhai and Shi, Wei and Chen, Wentao and Li, Ding and others},
+  booktitle={SIGCOMM 2021}
+}
+@inproceedings{apple-private-relay-imc,
+  title={{Towards a Tectonic Traffic Shift? Investigating Apple's New Relay Network}},
+  author={Sattler, Patrick and Aulbach, Juliane and Zirngibl, Johannes and Carle, Georg},
+  booktitle={IMC 2022}
+}
+
+@inproceedings{akella-multihoming-nsdi-04,
+  title={{Multihoming Performance Benefits: An Experimental Evaluation of Practical Enterprise Strategies}},
+  author={Akella, Aditya and Seshan, Srinivasan and Shaikh, Anees},
+  booktitle={NSDI 2004}
+}
+@inproceedings{ontas,
+  title={{ONTAS: Flexible and Scalable Online Network Traffic Anonymization System}},
+  author={Kim, Hyojoon and Gupta, Arpit},
+  booktitle={Workshop on Network Meets AI \& ML 2019}
+}
 @misc{gulp,
-  title={Lossless gigabit remote packet capture with linux},
+  title={{Lossless Gigabit Remote Packet Capture with Linux}},
   author={Satten, Corey},
   year={2008},
-  publisher={University of Washington Network Systems. http://staff. washington. edu~…}
+  publisher={University of Washington Network Systems. http://staff. washington. edu~…},
+  url={https://staff.washington.edu/corey/gulp/}
 }
 @misc{tshark,
- title={Tshark},
+ title={{TShark}},
  author={Combs, Gerald},
- url={wireshark.org/docs/man-pages/tshark.html},
+ url={https://wireshark.org/docs/man-pages/tshark.html},
  year={2020}
 }
 @inproceedings{xu-anonymization,
-  title={Prefix-preserving {IP} address anonymization: Measurement-based security evaluation and a new cryptography-based scheme},
-  author={Xu, Jun and Fan, Jinliang and Ammar, Mostafa H and Moon, Sue B},
-  booktitle={International Conference on Network Protocols},
-  year={2002},
+  title={{Prefix-Preserving IP Address Anonymization: Measurement-Based Security Evaluation and a New Cryptography-Based Scheme}},
+  author={Xu, Jun and Fan, Jinliang and Ammar, Mostafa H. and Moon, Sue B},
+  booktitle={ICNP 2002}
 }
 
 @inproceedings{tango,
-  title={It takes two to tango: cooperative edge-to-edge routing},
+  title={{It Takes Two to Tango: Cooperative Edge-to-Edge Routing}},
   author={Birge-Lee, Henry and Apostolaki, Maria and Rexford, Jennifer},
-  booktitle={HOTNETS},
-    year={2022}
+  booktitle={HotNets 2022}
 }
 
 @inproceedings{bhowmick-pam2023,
-  title={{TTL} Violation of {DNS} Resolvers in the Wild},
+  title={{TTL Violation of DNS Resolvers in the Wild}},
   author={Bhowmick, Protick and Khan, Mohammad Ishtiaq Ashiq and Deccio, Casey and Chung, Taejoong},
-  booktitle={PAM},
-  year={2023},
+  booktitle={PAM 2023}
 }
 
 @inproceedings{mao2002precise,
-  title={A Precise and Efficient Evaluation of the Proximity Between Web Clients and Their Local {DNS} Servers.},
-  author={Mao, Zhuoqing Morley and Cranor, Charles D and Douglis, Fred and Rabinovich, Michael and Spatscheck, Oliver and Wang, Jia},
-  booktitle={NSDI},
-  year={2002}
+  title={{A Precise and Efficient Evaluation of the Proximity Between Web Clients and Their Local DNS Servers}},
+  author={Mao, Zhuoqing Morley and Cranor, Charles D. and Douglis, Fred and Rabinovich, Michael and Spatscheck, Oliver and Wang, Jia},
+  booktitle={NSDI 2002}
 }
 
 @inproceedings{allman-dns-in-context,
-  title={Putting {DNS} in context},
+  title={{Putting DNS in Context}},
   author={Allman, Mark},
-  booktitle={IMC},
-  year={2020}
+  booktitle={IMC 2020}
 }
 
 @inproceedings{verfploeter,
-  title={Broad and load-aware anycast mapping with verfploeter},
-  author={De Vries, Wouter B and de O. Schmidt, Ricardo and Hardaker, Wes and Heidemann, John and de Boer, Pieter-Tjerk and Pras, Aiko},
-  booktitle={IMC},
-  year={2017}
+  title={{Broad and Load-Aware Anycast Mapping with Verfploeter}},
+  author={De Vries, Wouter B. and de O. Schmidt, Ricardo and Hardaker, Wes and Heidemann, John and de Boer, Pieter-Tjerk and Pras, Aiko},
+  booktitle={IMC 2017}
 }
 
 @inproceedings{caida-cones,
-  title={AS relationships, customer cones, and validation},
+  title={{AS Relationships, Customer Cones, and Validation}},
   author={Luckie, Matthew and Huffaker, Bradley and Dhamdhere, Amogh and Giotsas, Vasileios and Claffy, KC},
-  booktitle={Proceedings of the 2013 conference on Internet measurement conference},
-  pages={243--256},
-  year={2013}
+  booktitle={IMC 2013}
 }
 
-@inproceedings{gao2000stable,
-  title={Stable {I}nternet routing without global coordination},
+@article{gao2001stable,
+  title={{Stable Internet Routing Without Global Coordination}},
   author={Gao, Lixin and Rexford, Jennifer},
-  booktitle={SIGMETRICS},
-  year={2000}
+  journal={ToN},
+  year={2001},
 }
 
 @inproceedings{manycast2,
     author = {Sommese, Raffaele and Bertholdo, Leandro and Akiwate, Gautam and Jonker, Mattijs and van Rijswijk-Deij, Roland and Dainotti, Alberto and Claffy, KC and Sperotto, Anna},
-    title = {{MAnycast2}: Using Anycast to Measure Anycast},
-    year = {2020},
-    booktitle = {IMC},
+    title = {{MAnycast2: Using Anycast to Measure Anycast}},
+    booktitle = {IMC 2020}
 }
 
 @inproceedings{hoiho,
-  title={Learning to extract geographic information from {I}nternet router hostnames},
-  author={Luckie, Matthew and Huffaker, Bradley and Marder, Alexander and Bischof, Zachary and Fletcher, Marianne and Claffy, K},
-  booktitle={CoNEXT},
-  year={2021}
+  title={{Learning to Extract Geographic Information from Internet Router Hostnames}},
+  author={Luckie, Matthew and Huffaker, Bradley and Marder, Alexander and Bischof, Zachary and Fletcher, Marianne and Claffy, KC},
+  booktitle={CoNEXT 2021}
 }
 
 @inproceedings{todd-cloud-connectivity,
-  title={Cloud provider connectivity in the flat internet},
+  title={{Cloud Provider Connectivity in the Flat Internet}},
   author={Arnold, Todd and He, Jia and Jiang, Weifan and Calder, Matt and Cunha, Italo and Giotsas, Vasileios and Katz-Bassett, Ethan},
-  booktitle={IMC},
-  year={2020}
+  booktitle={IMC 2020}
+}
+@inproceedings{jiangchen-cdn-imc,
+  title={{The Best of Both Worlds: High Availability CDN Routing Without Compromising Control}},
+  author={Zhu, Jiangchen and Vermeulen, Kevin and Cunha, Italo and Katz-Bassett, Ethan and Calder, Matt},
+  booktitle={IMC 2022}
 }
 
 @inproceedings{todd-cloud-latency,
-  title={(How Much) Does a Private {WAN} Improve Cloud Performance?\killpunct},
+  title={{(How Much) Does a Private WAN Improve Cloud Performance}?\killpunct},
   author={Arnold, Todd and G{\"u}rmeri{\c{c}}liler, Ege and Essig, Georgia and Gupta, Arpit and Calder, Matt and Giotsas, Vasileios and Katz-Bassett, Ethan},
-  booktitle={INFOCOM},
-  year={2020},
+  booktitle={INFOCOM 2020}
 }
 
 @inproceedings{cloudy-short-rtts,
-  title={Cloudy with a chance of short {RTT}s: analyzing cloud connectivity in the {I}nternet},
+  title={{Cloudy With a Chance of Short RTTs: Analyzing Cloud Connectivity in the Internet}},
   author={Dang, The Khang and Mohan, Nitinder and Corneo, Lorenzo and Zavodovski, Aleksandr and Ott, J{\"o}rg and Kangasharju, Jussi},
-  booktitle={IMC},
-  year={2021}
+  booktitle={IMC 2021}
+}
+@article{bgp-churn,
+  title={{A Measurement Study on the Impact of Routing Events on End-to-End Internet Path Performance}},
+  author={Wang, Feng and Mao, Zhuoqing Morley and Wang, Jia and Gao, Lixin and Bush, Randy},
+  booktitle={SIGCOMM 2006},
 }
 
 @inproceedings{seven-years,
-  title={Seven years in the life of Hypergiants' off-nets},
+  title={{Seven Years in the Life of Hypergiants' Off-Nets}},
   author={Gigis, Petros and Calder, Matt and Manassakis, Lefteris and Nomikos, George and Kotronis, Vasileios and Dimitropoulos, Xenofontas and Katz-Bassett, Ethan and Smaragdakis, Georgios},
-  booktitle={SIGCOMM},
-  year={2021}
+  booktitle={SIGCOMM 2021},
 }
 
 @inproceedings{fastly-egress,
-  title={Staying Alive: Connection Path Reselection at the Edge.},
+  title={{Staying Alive: Connection Path Reselection at the Edge}},
   author={Landa, Raul and Saino, Lorenzo and Buytenhek, Lennert and Ara{\'u}jo, Jo{\~a}o Taveira},
-  booktitle={NSDI},
-  year={2021}
+  booktitle={NSDI 2021}
 }
 
 @inproceedings{mobile-dnns,
-  title={Smart at what cost? Characterising Mobile Deep Neural Networks in the wild},
+  title={{Smart at What Cost? Characterising Mobile Deep Neural Networks in the Wild}},
   author={Almeida, Mario and Laskaridis, Stefanos and Mehrotra, Abhinav and Dudziak, Lukasz and Leontiadis, Ilias and Lane, Nicholas D},
-  booktitle={IMC},
-  year={2021}
+  booktitle={IMC 2021}
 }
 
 @inproceedings{scion_deployment_conext,
-  title={Deployment and scalability of an inter-domain multi-path routing infrastructure},
+  title={{Deployment and Scalability of an Inter-Domain Multi-Path Routing Infrastructure}},
   author={Kr{\"a}henb{\"u}hl, Cyrill and Tabaeiaghdaei, Seyedali and Gloor, Christelle and Kwon, Jonghoon and Perrig, Adrian and Hausheer, David and Roos, Dominik},
-  booktitle={CoNEXT},
-  year={2021}
+  booktitle={CoNEXT 2021}
 }
 
 @inproceedings{hypergiants-steering,
-  title={Steering hyper-giants' traffic at scale},
+  title={{Steering Hyper-Giants' Traffic at Scale}},
   author={Pujol, Enric and Poese, Ingmar and Zerwas, Johannes and Smaragdakis, Georgios and Feldmann, Anja},
-  booktitle={CoNEXT},
-  year={2019}
+  booktitle={CoNEXT 2019}
 }
 
 @inproceedings{nel,
-  title={Network Error Logging: Client-side measurement of end-to-end web service reliability},
-  author={Burnett, Sam and Chen, Lily and Creager, Douglas A and Efimov, Misha and Grigorik, Ilya and Jones, Ben and Madhyastha, Harsha V and Papageorge, Pavlos and Rogan, Brian and Stahl, Charles and others},
-  booktitle={NSDI},
-  year={2020}
+  title={{Network Error Logging: Client-Side Measurement of End-to-End Web Service Reliability}},
+  author={Burnett, Sam and Chen, Lily and Creager, Douglas A. and Efimov, Misha and Grigorik, Ilya and Jones, Ben and Madhyastha, Harsha V. and Papageorge, Pavlos and Rogan, Brian and Stahl, Charles and others},
+  booktitle={NSDI 2020}
 }
 
 @inproceedings{gao2006avoiding,
-  title={Avoiding Oscillations Due to Intelligent Route Control Systems.},
+  title={{Avoiding Oscillations Due to Intelligent Route Control Systems}},
   author={Gao, Ruomei and Dovrolis, Constantinos and Zegura, Ellen W},
-  booktitle={INFOCOM},
-  year={2006}
+  booktitle={INFOCOM 2006}
 }
 
 @inproceedings{wan-as-overlay,
-  title={Judicious {QoS} using cloud overlays},
-  author={Haq, Osama and Doucette, Cody and Byers, John W and Dogar, Fahad R},
-  booktitle={CoNEXT},
-  year={2020}
+  title={{Judicious QoS Using Cloud Overlays}},
+  author={Haq, Osama and Doucette, Cody and Byers, John W. and Dogar, Fahad R},
+  booktitle={CoNEXT 2020}
 }
 
 @inproceedings{problink,
-  title={Stable and Practical {AS} Relationship Inference with {ProbLink}},
+  title={{Stable and Practical AS Relationship Inference with ProbLink}},
   author={Jin, Yuchen and Scott, Colin and Dhamdhere, Amogh and Giotsas, Vasileios and Krishnamurthy, Arvind and Shenker, Scott},
-  booktitle={NSDI},
-  year={2019}
+  booktitle={NSDI 2019}
 }
 
 @article{ripe-atlas,
-  title={{RIPE} Atlas: A Global Internet Measurement Network},
+  title={{RIPE Atlas: A Global Internet Measurement Network}},
   author={Staff, RIPE NCC},
   journal={Internet Protocol Journal},
   year={2015}
 }
 
+@article{ripe-ris,
+ title={{RIS Live}},
+ author={Staff, RIPE NCC},
+ url={https://ris-live.ripe.net},
+ year={2023}
+}
+
 @inproceedings{pecan,
-  title={Quantifying the benefits of joint content and network routing},
+  title={{Quantifying the Benefits of Joint Content and Network Routing}},
   author={Valancius, Vytautas and Ravi, Bharath and Feamster, Nick and Snoeren, Alex C},
-  booktitle={SIGMETRICS},
-  year={2013}
+  booktitle={SIGMETRICS 2013}
+}
+
+@inproceedings{miro,
+  title={{MIRO: Multi-Path Interdomain Routing}},
+  author={Xu, Wen and Rexford, Jennifer},
+  booktitle={SIGCOMM 2006}
+}
+
+@article{nira,
+title={{NIRA: A New Inter-Domain Routing Architecture}},
+  author={Yang, Xiaowei and Clark, David and Berger, Arthur W},
+  journal={ToN},
+  year={2007}
 }
 
 @inproceedings{joint-server-select,
-  title={Joint server selection and routing for geo-replicated services},
+  title={{Joint Server Selection and Routing for Geo-Replicated Services}},
   author={Narayana, Srinivas and Jiang, Wenjie and Rexford, Jennifer and Chiang, Mung},
-  booktitle={International Conference on Utility and Cloud Computing},
-  year={2013},
+  booktitle={International Conference on Utility and Cloud Computing 2013}
 }
 
 @inproceedings{mptcp-nsdi,
-  title={How hard can it be? designing and implementing a deployable multipath {TCP}},
+  title={{How Hard Can It Be? Designing and Implementing a Deployable Multipath TCP}},
   author={Raiciu, Costin and Paasch, Christoph and Barre, Sebastien and Ford, Alan and Honda, Michio and Duchene, Fabien and Bonaventure, Olivier and Handley, Mark},
-  booktitle={NSDI},
-  year={2012}
+  booktitle={NSDI 2012}
+}
+
+@inproceedings{mpquic-conext,
+  title={{Multipath QUIC: Design and Evaluation}},
+  author={De Coninck, Quentin and Bonaventure, Olivier},
+  booktitle={CoNEXT 2017},
 }
 
 @inproceedings{routescout,
-  title={Performance-Driven Internet Path Selection},
+  title={{Performance-Driven Internet Path Selection}},
   author={Apostolaki, Maria and Singla, Ankit and Vanbever, Laurent},
-  booktitle={SOSR},
-  year={2021}
+  booktitle={SOSR 2021}
 }
 
 @inproceedings{akamai-leveraging,
-  title={Leveraging interconnections for performance: the serving infrastructure of a large {CDN}},
+  title={{Leveraging Interconnections for Performance: The Serving Infrastructure of a Large CDN}},
   author={Wohlfart, Florian and Chatzis, Nikolaos and Dabanoglu, Caglar and Carle, Georg and Willinger, Walter},
-  booktitle={SIGCOMM},
-  year={2018}
+  booktitle={SIGCOMM 2018}
 }
 
 @inproceedings{schlinker19peering,
   author = {Brandon Schlinker and Todd Arnold and Italo Cunha
     and Ethan Katz-Bassett},
   title = {{PEERING: Virtualizing BGP at the Edge for Research}},
-  booktitle = {CoNEXT},
-  year = {2019}
+  booktitle = {CoNEXT 2019}
 }
 @inproceedings{spring2003causes,
-  title={The causes of path inflation},
+  title={{The Causes of Path Inflation}},
   author={Spring, Neil and Mahajan, Ratul and Anderson, Thomas},
-  booktitle={Proceedings of the 2003 conference on Applications, technologies, architectures, and protocols for computer communications},
-  year={2003}
+  booktitle={Applications, technologies, architectures, and protocols for computer communications 2003}
 }
-@inproceedings{labovitz2000delayed,
-  title={Delayed Internet routing convergence},
+@article{labovitz2000delayed,
+  title={{Delayed Internet Routing Convergence}},
   author={Labovitz, Craig and Ahuja, Abha and Bose, Abhijit and Jahanian, Farnam},
-  booktitle={SIGCOMM},
-  year={2000},
+  journal={ToN},
+  year={2001}
 }
 
 @inproceedings{cache-me-if-you-can,
-  title={Cache me if you can: Effects of {DNS} Time-to-Live},
-  author={Moura, Giovane CM and Heidemann, John and Schmidt, Ricardo de O and Hardaker, Wes},
-  booktitle={IMC},
-  year={2019}
+  title={{Cache Me If You Can: Effects of DNS Time-to-Live}},
+  author={Moura, Giovane C. M. and Heidemann, John and Schmidt, Ricardo de O and Hardaker, Wes},
+  booktitle={IMC 2019}
 }
 
 @article{larry-peterson-5g,
-  title={{5G} Mobile Networks: A Systems Approach},
+  title={{5G Mobile Networks: A Systems Approach}},
   author={Peterson, Larry and Sunay, O{\u{g}}uz},
   journal={Synthesis Lectures on Network Systems},
-  year={2020},
+  year={2020}
+}
+@inproceedings{vr-jitter-test,
+  title={Effects of latency jitter on simulator sickness in a search task},
+  author={Stauffert, Jan-Philipp and Niebling, Florian and Latoschik, Marc Erich},
+  booktitle={2018 IEEE conference on virtual reality and 3D user interfaces (VR)},
+  year={2018},
+}
+
+%% 5g mobile provider with cloud integration products
+@misc{verizon-aws,
+  title={{Architecting Geo-Distributed Mobile Edge Application With Consul}},
+  author={HashiCorp},
+  url={https://www.youtube.com/watch?v=At6cHrL6sOQ},
+  year={2022}
+}
+@misc{att-azure,
+  title={{ATT Moves 5G Mobile Network to Microsoft Cloud}},
+  author={ATT},
+  url={https://about.att.com/story/2021/att_microsoft_azure.html},
+  year={2021}
+}
+@misc{azure-voicemail,
+  url={https://techcommunity.microsoft.com/t5/azure-for-operators-blog/azure-operator-voicemail-take-the-first-step-to-move-voice/ba-p/3751315},
+  title={{Azure Operator Voicemail: Take the First Step to Move Voice Workloads to the Cloud}},
+  author={Spreadbury, Austin and Singh, Nicole},
+  year={2023}
+}
+@misc{nokia-aws,
+  title={{Nokia 5G Core Software as a Service in Practice}},
+  author={Nokia},
+  year={2022},
+  url={https://www.youtube.com/watch?v=_4DHzjrtB34}
+}
+@misc{msft-5g-core,
+  title={{Microsoft Azure Private 5G Core}},
+  year={2023},
+  author={Microsoft},
+  url={https://azure.microsoft.com/en-us/products/private-5g-core}
 }
 
 @inproceedings{latency-shears,
-  title={Pruning edge research with latency shears},
+  title={{Pruning Edge Research With Latency Shears}},
   author={Mohan, Nitinder and Corneo, Lorenzo and Zavodovski, Aleksandr and Bayhan, Suzan and Wong, Walter and Kangasharju, Jussi},
-  booktitle={HOTNETs},
-  year={2020}
+  booktitle={HotNets 2020}
 }
 
+
+%%% DDOS
+
+@inproceedings{ixp-scrubber,
+  title={IXP scrubber: learning from blackholing traffic for ML-driven DDoS detection at scale},
+  author={Wichtlhuber, Matthias and Strehle, Eric and Kopp, Daniel and Prepens, Lars and Stegmueller, Stefan and Rubina, Alina and Dietzel, Christoph and Hohlfeld, Oliver},
+  booktitle={Proceedings of the ACM SIGCOMM 2022 Conference},
+  pages={707--722},
+  year={2022}
+}
+@misc{increasing-ddos-siliconangle,
+title={{Internet’s rapid growth faces challenges amid rising denial-of-service attacks}},
+url={https://siliconangle.com/2023/09/26/internets-rapid-growth-faces-challenges-amid-rising-ddos-attacks},
+author={Riley, Duncan},
+year={2023}
+}
+@inproceedings{dike-breaks-ddos,
+  title={{When the dike breaks: Dissecting DNS defenses during DDoS}},
+  author={Moura, Giovane CM and Heidemann, John and M{\"u}ller, Moritz and de O. Schmidt, Ricardo and Davids, Marco},
+  booktitle={IMC 2018},
+}
+@misc{spamhaus-ddos,
+  title={{The DDoS That Knocked Spamhaus Offline (And How We Mitigated It)}},
+  url={https://blog.cloudflare.com/the-ddos-that-knocked-spamhaus-offline-and-ho},
+  author={Prince, Matthew},
+  year={2013}
+}
+@misc{github-ddos-attack,
+title={{February 28th DDoS Incident Report}},
+author={Kottler, Sam},
+url={https://github.blog/2018-03-01-ddos-incident-report/},
+year={2018}
+}
+@misc{akamai-overprovision,
+url={https://increment.com/reliability/akamai-capacity-growth-surge/},
+title={{Case study: How Akamai weathered a surge in capacity growth}},
+author={Stokel-Walker, Chris},
+year={2021}
+}
+
+
+%%% Flash crowds
+@misc{lockdown-flash-crowd,
+  title={Record Internet Traffic Surge Seen by UK ISPs on Tuesday},
+  url={https://ispreview.co.uk/index.php/2020/11/record-internet-traffic-surge-seen-by-some-uk-isps-on-tuesday.html},
+  author={Jackson, Mark},
+  year={2020}
+}
+@inproceedings{ovh-weathermap,
+  title={Revealing the evolution of a cloud provider through its network weather map},
+  author={Piraux, Maxime and Navarre, Louis and Rybowski, Nicolas and Bonaventure, Olivier and Donnet, Benoit},
+  booktitle={IMC 2022},
+}
+@misc{fortnite-flash-crowd,
+url={https://independent.co.uk/tech/fortnite-twitter-b2442476.html},
+year={2023},
+author={Landi, Martyn},
+title={{Return of original Fortnite map causes record traffic on Virgin Media O2 network}}
+}
+
+%%% Route Changes
+@misc{bloomberg-verizon-change,
+title={{Internet Traffic Surge Triggers Massive Outage on East Coast}},
+url={https://bloomberg.com/news/articles/2021-01-26/internet-outage-hits-broad-swath-of-eastern-u-s-customers},
+year={2021},
+author={Moritz, Scott}
+}
+@misc{route-leak-russia,
+title={{GP Leak Leads to Spike of Misdirected Traffic}},
+url={https://kentik.com/analysis/BGP-Routing-Leak-Leads-to-Spike-of-Misdirected-Traffic},
+author={Madory,Doug},
+year={2024}
+}
+@misc{hamas-fiber-cut,
+url={https://independent.co.uk/tech/facebook-instagram-messenger-down-not-working-latest-b2507376.html},
+title={{Facebook, Instagram, Messenger down: Meta platforms suddenly stop working in huge outage}},
+author={Griffin, Andrew},
+year={2024}
+}
+@misc{microsoft-cloud-outage-march24,
+url={https://twitter.com/DougMadory/status/1768286812894605517},
+author={Madory,Doug},
+year={2024},
+title={{Outage Notice From Microsoft}}
+}
+@inproceedings{livenet,
+  title={Livenet: a low-latency video transport network for large-scale live streaming},
+  author={Li, Jinyang and Li, Zhenyu and Lu, Ri and Xiao, Kai and Li, Songlin and Chen, Jufeng and Yang, Jingyu and Zong, Chunli and Chen, Aiyun and Wu, Qinghua and others},
+  booktitle={SIGCOMM 2022},
+}
+
+%% MISC
+
+
+
+
 @misc{tcp-rto,
-title={Computing {TCP}'s Retransmission Timer},
-url={datatracker.ietf.org/doc/html/rfc6298},
+title={{Computing TCP's Retransmission Timer}},
+url={https://datatracker.ietf.org/doc/html/rfc6298},
 author={{IETF}},
 year={2011}
 }
 
 @misc{mptcp-rfc,
-  title={Architectural Guidelines for Multipath {TCP} Development},
+  title={{Architectural Guidelines for Multipath TCP Development}},
   url={https://datatracker.ietf.org/doc/rfc6182/},
   author={IETF},
   year={2011}
 }
+@misc{mpquic-rfc,
+  title={{Multipath Extension for QUIC}},
+  url={https://datatracker.ietf.org/doc/html/draft-liu-multipath-quic-02},
+  author={IETF},
+  year={2020}
+}
 
 @misc{mpudp-rfc-draft,
-  title={A multipath framework for {UDP} traffic over heterogeneous access networks},
-  url={datatracker.ietf.org/doc/html/draft-amend-tsvwg-multipath-framework-mpdccp-01},
+  title={{A Multipath Framework for UDP Traffic Over Heterogeneous Access Networks}},
+  url={https://datatracker.ietf.org/doc/html/draft-amend-tsvwg-multipath-framework-mpdccp-01},
   author={Transport Area Working Group},
   year={2019}
 }
 
-@inproceedings{mptcp-sdwan,
-  title={Improving {SD-WAN} resilience: From vertical handoff to {WAN}-aware {MPTCP}},
+@article{mptcp-sdwan,
+  title={{Improving SD-WAN Resilience: From Vertical Handoff to WAN-Aware MPTCP}},
   author={Zhang, Yang and Tourrilhes, Jean and Zhang, Zhi-Li and Sharma, Puneet},
-  booktitle={ToN},
-  year={2021},
+  journal={ToN},
+  year={2021}
 }
 
 @inproceedings{cloudedge-imc,
-  title={From cloud to edge: a first look at public edge platforms},
+  title={{From Cloud to Edge: A First Look at Public Edge Platforms}},
   author={Xu, Mengwei and Fu, Zhe and Ma, Xiao and Zhang, Li and Li, Yanan and Qian, Feng and Wang, Shangguang and Li, Ke and Yang, Jingyu and Liu, Xuanzhe},
-  booktitle={IMC},
-  year={2021}
+  booktitle={IMC 2021}
 }
 
 % Misc Links
 @misc{vultr,
-  url={vultr.com/},
+  url={https://vultr.com/},
   author={VULTR},
-  title={VULTR Cloud},
+  title={{VULTR Cloud}},
   year={2023}
 }
 
 @misc{3gpp-app-reqs,
-  title={System architecture for the {5G} System ({5GS})},
+  title={{System Architecture for the 5G System (5GS)}},
   author={3GPP},
   year={2020},
-  url={3gpp.org/ftp//Specs/archive/23_series/23.501/23501-g60.zip}
+  url={https://3gpp.org/ftp//Specs/archive/23_series/23.501/23501-g60.zip}
 }
 
 @misc{panrg,
-  url={datatracker.ietf.org/rg/panrg/about/},
+  url={https://datatracker.ietf.org/rg/panrg/about/},
   author={{IETF}},
-  title={Path Aware Network {RG}},
+  title={{Path Aware Network RG}},
   year={2017}
 }
 
 @misc{masque,
-  url={datatracker.ietf.org/doc/draft-ietf-masque-connect-ip/},
+  url={https://datatracker.ietf.org/doc/draft-ietf-masque-connect-ip/},
   author={{IETF}},
-  title={{IP} Proxying Support for {HTTP}},
+  title={{IP Proxying Support for HTTP}},
   year={2022}
 }
 
 @misc{ripe-ipmap,
-  url={ipmap.ripe.net/},
+  url={https://ipmap.ripe.net/},
   title={{RIPE} {IP}map},
   author={RIPE},
   year={2022}
 }
 
 @misc{maxmind,
-  url={maxmind.com/en/geoip2-databases},
+  url={https://maxmind.com/en/geoip2-databases},
   title={Geo{IP}2 {D}atabases},
   author={Maxmind},
   year={2022}
 }
 
 @misc{routeviews,
-  url={bgpstream.caida.org/data},
+  url={https://bgpstream.caida.org/data},
   author={CAIDA},
-  title={{BGP} Stream}
+  title={{BGP Stream}},
+  year={2023}
 }
 
 @misc{apnic-blog-routing-table,
-  url={blog.apnic.net/2021/03/03/what-will-happen-when-the-routing-table-hits-1024k/},
+  url={https://blog.apnic.net/2021/03/03/what-will-happen-when-the-routing-table-hits-1024k/},
   author={{Danny Pinto}},
-  title={What will happen when the routing table hits 1024{K}?},
-  year={2021},
+  title={{What Will Happen When the Routing Table Hits 1024K}?\killpunct},
+  year={2021}
 }
 
 @misc{flexiwan,
-  url={docs.flexiwan.com/},
+  url={https://docs.flexiwan.com/},
   author={flexiWAN},
-  title={{flexiWAN} Documentation},
+  title={{flexiWAN Documentation}},
   year={2022}
 }
 
 @misc{subspace,
-  url={subspace.com/solutions/reduce-internet-latency},
+  url={https://subspace.com/solutions/reduce-internet-latency},
   author={Subspace},
-  title={Optimize Your Network on Subspace},
+  title={{Optimize Your Network on Subspace}},
   year={2022}
 }
 
 @misc{inap,
-  url={inap.com/network/},
+  url={https://inap.com/network/},
   author={INAP},
-  title={{INAP} Network Connectivity},
+  title={{INAP Network Connectivity}},
   year={2022}
 }
 
 @misc{akamai_sase,
-  url={akamai.com/resources/akamai-secure-access-service-edge-sase},
+  url={https://akamai.com/resources/akamai-secure-access-service-edge-sase},
   author={Akamai},
-  title={Akamai Secure Access Service Edge},
+  title={{Akamai Secure Access Service Edge}},
   year={2022}
 }
 
 @misc{cloudflare_argo,
-  url={cloudflare.com/products/argo-smart-routing/},
+  url={https://cloudflare.com/products/argo-smart-routing/},
   author={Cloudflare},
-  title={Argo Smart Routing},
+  title={{Argo Smart Routing}},
   year={2022}
 }
 
 @misc{megaport,
-  url={megaport.com},
+  url={https://megaport.com},
   author={Megaport},
-  title={Agile Networking for Real-time {IT} Transformation},
+  title={{Agile Networking for Real-Time IT Transformation}},
   year={2023}
 }
 
 @inproceedings{labovitz2019,
-  title={Internet Traffic 2009-2019},
+  title={{Internet Traffic 2009-2019}},
   author={Labovitz, Craig},
   booktitle={{APIC} Conference on Operational Technologies},
   year={2019}
 }
 
 @misc{msft-enterprise-cloud-usage,
-url={blog.workinghardinit.work/2020/07/29/azure-virtual-wan-is-for-everyone},
-title={Azure Virtual {WAN} is for Everyone},
+url={https://blog.workinghardinit.work/2020/07/29/azure-virtual-wan-is-for-everyone},
+title={{Azure Virtual WAN is for Everyone}},
 author={Working Hard in IT},
 year={2020}
 }
 @misc{aws-enterprise-cloud-usage,
-url={v500.com/aws},
-title={What are the ways to connect an on-premise network to {AWS} Cloud?\killpunct},
+url={https://v500.com/aws},
+title={{What Are the Ways to Connect an On-Premise Network to AWS Cloud}?\killpunct},
 author={V500 Systems},
 year={2022}
 }
 @misc{google-enterprise-cloud-usage,
-url={cloud.google.com/network-connectivity/docs/how-to/choose-product},
-title={Choosing a Network Connectivity product},
+url={https://cloud.google.com/network-connectivity/docs/how-to/choose-product},
+title={{Choosing a Network Connectivity Product}},
 author={Google},
 year={2022}
 }
 @misc{multi-cloud,
-url={vmware.com/topics/glossary/content/multi-cloud.html},
-title={What is Multi-Cloud?\killpunct},
+url={https://vmware.com/topics/glossary/content/multi-cloud.html},
+title={{What is Multi-Cloud}?\killpunct},
 author={VMWare},
 year={2022}
 }
 @misc{sdwan-benefits,
-url={cisco.com/c/en/us/solutions/enterprise-networks/sd-wan/benefits.html},
-title={Benefits of {SD-WAN}},
+url={https://cisco.com/c/en/us/solutions/enterprise-networks/sd-wan/benefits.html},
+title={{Benefits of SD-WAN}},
 author={Cisco},
 year={2022}
 }
 
+@misc{bgpusfullview,
+title={{Full View or Not Full View: The Benefits and Dangers of the Full BGP Table}},
+url={https://bgp.us/routing-table/full-bgp-table-benefits-and-dangers},
+author={BGP.us},
+year={2016}
+}
+@misc{potaroo,
+title={{BGP Routing Table Analysis Reports}},
+url={https://bgp.potaroo.net},
+author={Geoff Huston},
+year={2023}
+}
+
+
+%%% edge compute
 @misc{msft-edge-stack,
-url={azure.microsoft.com/en-us/products/azure-stack/edge/},
-title={Azure Stack Edge},
+url={https://azure.microsoft.com/en-us/products/azure-stack/edge/},
+title={{Azure Stack Edge}},
 author={Microsoft},
 year={2022}
 }
 @misc{aws-edge-stack,
-url={aws.amazon.com/edge/},
-title={AWS for the Edge},
+url={https://aws.amazon.com/edge/},
+title={{AWS for the Edge}},
 author={Amazon},
 year={2022}
 }
 @misc{google-edge-stack,
-url={cloud.google.com/edge-tpu},
-title={Edge {TPU}},
+url={https://cloud.google.com/edge-tpu},
+title={{Edge TPU}},
 author={Google},
 year={2022}
 }
 @misc{ibm-edge-stack,
-url={ibm.com/cloud/edge-computing},
-title={{IBM} Solutions for {5G} and edge computing},
+url={https://ibm.com/cloud/edge-computing},
+title={{IBM Solutions for 5G and Edge Computing}},
 author={{IBM}},
 year={2022}
 }
 
 
+%%%% sd-wan cloud integration
+@misc{msft-sdwan,
+url={https://learn.microsoft.com/en-us/azure/virtual-wan/sd-wan-connectivity-architecture},
+title={{SD-WAN Connectivity Architecture with Azure Virtual WAN}},
+author={Microsoft},
+year={2022}
+}
+@misc{aws-sdwan,
+url={https://aws.amazon.com/blogs/networking-and-content-delivery/simplify-sd-wan-connectivity-with-aws-transit-gateway-connect/},
+title={{Simplify SD-WAN Connectivity With AWS Transit Gateway Connect}},
+author={Amazon},
+year={2022}
+}
+@misc{google-sdwan,
+url={https://cloud.google.com/network-connectivity-center},
+title={{Network Connectivity Center}},
+author={Google},
+year={2021}
+}
+@misc{ibm-sdwan,
+title={{IBM SevOne Network Performance Management}},
+url={https://ibm.com/products/sevone-network-performance-management},
+author={IBM},
+year={2022}
+}
+
+@misc{mptcp-giga,
+url={https://blog.multipath-tcp.org/blog/html/2015/07/24/korea.html},
+title={{In Korean, Multipath TCP is Pronounced GIGA Path}},
+year={2015},
+author={Bonaventure,Olivier}
+}
+ 
+@misc{ios-network-stack,
+url={https://developer.apple.com/documentation/xcode/configuring-network-extensions},
+title={{Configuring Network Extensions}},
+author={Apple},
+year={2021}
+}
+
 @misc{att-vpn,
-url={partnerexchange.att.com/welcome/s/avpn},
-title={ATT Virtual Private Network},
+url={https://partnerexchange.att.com/welcome/s/avpn},
+title={{ATT Virtual Private Network}},
 author={ATT},
 year={2022}
 }
 
 %% MPTCP 
 @misc{apple-mptcp,
-url={developer.apple.com/documentation/foundation/urlsessionconfiguration/improving_network_reliability_using_multipath_tcp},
+url={https://developer.apple.com/documentation/foundation/urlsessionconfiguration/improving_network_reliability_using_multipath_tcp},
 title={{Improving Network Reliability Using Multipath TCP}},
 author={Apple},
 year={2020}
 }
 @misc{mptcp-proxy-tessares,
-url={tessares.net/open-source/introduction-a-client-library-for-0-rtt-converter/},
-title={{Introducing a client library for 0-RTT Converter}},
+url={https://tessares.net/open-source/introduction-a-client-library-for-0-rtt-converter/},
+title={{Introducing a Client Library for 0-RTT Converter}},
 author={Tessares},
 year={2019}
 }
 @misc{mptcp-proxy-ietf,
-  url={datatracker.ietf.org/doc/html/rfc8803},
+  url={https://datatracker.ietf.org/doc/html/rfc8803},
   title={{0-RTT TCP Convert Protocol}},
   author={IETF},
   year={2020}
 }
-@article{mptcp-adoption,
+@inproceedings{mptcp-adoption,
   title={{From Single Lane to Highways: Analyzing the Adoption of Multipath TCP in the Internet}},
   author={Aschenbrenner, Florian and Shreedhar, Tanya and Gasser, Oliver and Mohan, Nitinder and Ott, J\"{o}rg},
-  journal={Arxiv},
-  year={2021}
+  booktitle={IFIP Networking Conference 2021},
 }
 
 @misc{nanog-prefix-selling,
-  title={Panel: Buying and Selling {IPv4} Addresses},
-  url={youtube.com/watch?v=8FlTJEct9_s},
+  title={{Panel: Buying and Selling IPv4 Addresses}},
+  url={https://youtube.com/watch?v=8FlTJEct9_s},
   author={NANOG},
   year={2022}
 }
@@ -767,68 +1045,68 @@ year={2019}
 
 %% Enterprise Cloud Solutions
 @misc{sdwan-popularity-old,
-  title={{SD-WAN} grows in popularity during time of {COVID}-19},
+  title={{SD-WAN Grows in Popularity During Time of COVID-19}},
   author={Catherine Knowles},
-  url={channellife.com.au/story/sd-wan-grows-in-popularity-during-time-of-covid-19},
+  url={https://channellife.com.au/story/sd-wan-grows-in-popularity-during-time-of-covid-19},
   year={2021}
 }
 @misc{sdwan-popularity,
-  title={Have we come full circle – from {SD-WAN} to {SASE} to {SSE}},
+  title={{Have We Come Full Circle – From SD-WAN to SASE to SSE}},
   author={Alan Weissberger},
   url={https://tinyurl.com/23tr4p8d},
   year={2022}
 }
 @misc{cloud-frustration,
-  title={Survey reveals overwhelming dissatisfaction with cloud providers},
+  title={{Survey Reveals Overwhelming Dissatisfaction with Cloud Providers}},
   author={Catherine Knowles},
   year={2022},
-  url={itbrief.com.au/story/survey-reveals-overwhelming-dissatisfaction-with-cloud-providers}
+  url={https://itbrief.com.au/story/survey-reveals-overwhelming-dissatisfaction-with-cloud-providers}
 }
 @misc{sdwan-market-size,
-  title={ {SD-WAN} Market by Component, Deployment Mode, Organization Size, End User and Region},
+  title={{SD-WAN Market by Component, Deployment Mode, Organization Size, End User and Region}},
   author={MarketsandMarkets},
-  url={tinyurl.com/2yh5vemm},
+  url={https://tinyurl.com/2yh5vemm},
   year={2022}
 }
 @misc{sase-growth,
-  title={{SASE} allters market landscape},
+  title={{SASE Alters Market Landscape}},
   author={Dell'Oro Group},
   year={2022},
-  url={tinyurl.com/yenxzrde}
+  url={https://tinyurl.com/yenxzrde}
 }
 @misc{naas-market-growth,
-  title={Network as a service market - growth, trends, {COVID}-19 impact, and forecasts},
+  title={{Network as a Service Market - Growth, Trends, COVID-19 Impact, and Forecasts}},
   author={Mordor Intelligence},
   year={2022},
-  url={mordorintelligence.com/industry-reports/network-as-a-service-market-growth-trends-and-forecasts}
+  url={https://mordorintelligence.com/industry-reports/network-as-a-service-market-growth-trends-and-forecasts}
 }
 @misc{sdwan-vendor-comparisons,
-  title={{Comparison of the SD-WAN vendor solutions}},
+  title={{Comparison of the SD-WAN Vendor Solutions}},
   author={Harrison J. Son},
   year={2017},
-  url={netmanias.com/en/post/oneshot/12481/sd-wan-sdn-nfv/comparison-of-the-sd-wan-vendor-solutions}
+  url={https://netmanias.com/en/post/oneshot/12481/sd-wan-sdn-nfv/comparison-of-the-sd-wan-vendor-solutions}
 }
 
 
 
 % examples
 @misc{cisco-sdwan,
- title={Cisco {SD-WAN}},
+ title={{Cisco SD-WAN}},
  author={Cisco},
  year={2023},
- url={cisco.com/c/en/us/solutions/enterprise-networks/sd-wan/index.html}
+ url={https://cisco.com/c/en/us/solutions/enterprise-networks/sd-wan/index.html}
 }
 @misc{velocloud-sdwan,
-  title={{VM}ware {SD-WAN}},
+  title={{VMware SD-WAN}},
   author={VMware},
   year={2023},
-  url={sase.vmware.com/sd-wan}
+  url={https://sase.vmware.com/sd-wan}
 }
 @misc{barracuda-sdwan,
-  title={Accelerate your business with secure {SD-WAN}},
+  title={{Accelerate Your Business With Secure SD-WAN}},
   author={Barracuda},
   year={2023},
-  url={barracuda.com/products/network-security/sd-wan}
+  url={https://barracuda.com/products/network-security/sd-wan}
 }
 
 
