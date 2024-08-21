@@ -8,6 +8,12 @@
 
 
 % Microsoft
+@article{saving-private-wan,
+  title={Saving Private WAN: Using Internet Paths to Offload WAN Traffic in Conferencing Services},
+  author={Kataria, Bhaskar and LNU, Palak and Bothra, Rahul and Gandhi, Rohan and Bhattacherjee, Debopam and Padmanabhan, Venkata N and Atov, Irena and Ramakrishnan, Sriraam and Chaturmohta, Somesh and Kotipalli, Chakri and others},
+  journal={arXiv preprint arXiv:2407.02037},
+  year={2024}
+}
 @inproceedings{blast-shield,
   title={{Decentralized cloud wide-area network traffic engineering with BLASTSHIELD}},
   author={Krishnaswamy, Umesh and Singh, Rachee and Bj{\o}rner, Nikolaj and Raj, Himanshu},
@@ -94,6 +100,11 @@
   title={Hose-based cross-layer backbone network design with Benders decomposition},
   author={Eason, John P and He, Xueqi and Cziva, Richard and Noormohammadpour, Max and Balasubramanian, Srivatsan and Ahuja, Satyajeet Singh and Lu, Biao},
   booktitle={SIGCOMM 2023},
+}
+@inproceedings{meta-network-entitlement,
+  title={{Network entitlement: contract-based network sharing with agility and SLO guarantees}},
+  author={Ahuja, Satyajeet Singh and Dangui, Vinayak and Patil, Kirtesh and Somasundaram, Manikandan and Gupta, Varun and Sanchez, Mario and Yan, Guanqing and Noormohammadpour, Max and Razmjoo, Alaleh and Smith, Grace and others},
+  booktitle={SIGCOMM 2022},
 }
 @inproceedings{edge-fabric,
   title={{Engineering Egress with Edge Fabric: Steering Oceans of Content to the World}},
@@ -516,6 +527,12 @@
   title={{Staying Alive: Connection Path Reselection at the Edge}},
   author={Landa, Raul and Saino, Lorenzo and Buytenhek, Lennert and Ara{\'u}jo, Jo{\~a}o Taveira},
   booktitle={NSDI 2021}
+}
+
+@article{megate,
+  title={MegaTE: Extending WAN Traffic Engineering to Millions of Endpoints in Virtualized Cloud},
+  author={Miao, Congcong and Zhong, Zhizhen and Xiao, Yunming and Yang, Feng and Zhang, Senkuo and Jiang, Yinan and Bai, Zizhuo and Lu, Chaodong and Geng, Jingyi and He, Zekun and others},
+  year={2024}
 }
 
 @inproceedings{mobile-dnns,
@@ -1224,9 +1241,102 @@ year={2019}
 
 
 
+% CDNs offering compute
+@misc{cloudflare-workers,
+ title={Cloudflare Workers},
+ author={Cloudflare},
+ year={2024},
+ url={https://workers.cloudflare.com/}
+}
+@misc{fastly-compute,
+ title={Fastly Compute},
+ author={Fastly},
+ year={2024},
+ url={https://fastly.com/products/edge-compute}
+}
+@misc{edgecast-compute,
+ title={The CDN Edge brings Compute closer to where it is needed most},
+ author={Edgecast},
+ year={2020},
+ url={https://edgecast.medium.com/the-cdn-edge-brings-compute-closer-to-where-it-is-needed-most-d4a3f4107b11}
+}
 
 
 
+
+% Deep Learning stuff
+@article{li2024convex,
+  title={Convex and non-convex optimization under generalized smoothness},
+  author={Li, Haochuan and Qian, Jian and Tian, Yi and Rakhlin, Alexander and Jadbabaie, Ali},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
+}
+@article{kingma2014adam,
+  title={Adam: A method for stochastic optimization},
+  author={Kingma, Diederik P and Ba, Jimmy},
+  journal={arXiv preprint arXiv:1412.6980},
+  year={2014}
+}
+@article{geiping2021stochastic,
+  title={Stochastic training is not necessary for generalization},
+  author={Geiping, Jonas and Goldblum, Micah and Pope, Phillip E and Moeller, Michael and Goldstein, Tom},
+  journal={arXiv preprint arXiv:2109.14119},
+  year={2021}
+}
+@article{cybenko1989approximation,
+  title={Approximation by superpositions of a sigmoidal function},
+  author={Cybenko, George},
+  journal={Mathematics of control, signals and systems},
+  volume={2},
+  number={4},
+  pages={303--314},
+  year={1989},
+  publisher={Springer}
+}
+@inproceedings{goldblum-loss-landscapes-all-you-need,
+  title={Loss landscapes are all you need: Neural network generalization can be explained without the implicit bias of gradient descent},
+  author={Chiang, Ping-yeh and Ni, Renkun and Miller, David Yu and Bansal, Arpit and Geiping, Jonas and Goldblum, Micah and Goldstein, Tom},
+  booktitle={The Eleventh International Conference on Learning Representations},
+  year={2022}
+}
+@article{goldblum-pac-bounds,
+  title={PAC-Bayes compression bounds so tight that they can explain generalization},
+  author={Lotfi, Sanae and Finzi, Marc and Kapoor, Sanyam and Potapczynski, Andres and Goldblum, Micah and Wilson, Andrew G},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={31459--31473},
+  year={2022}
+}
+@article{huang2020understanding,
+  title={Understanding generalization through visualizations},
+  author={Huang, W Ronny and Emam, Zeyad and Goldblum, Micah and Fowl, Liam and Terry, Justin K and Huang, Furong and Goldstein, Tom},
+  year={2020},
+  publisher={PMLR}
+}
+
+
+% Reconfiguring BGP is dangerous
+@misc{msft-bgp-outage,
+ title={Global Microsoft cloud-service outage traced to rapid BGP router updates},
+ author={Ann Bednarz},
+ year={2023},
+ url={https://networkworld.com/article/971873/global-microsoft-cloud-service-outage-traced-to-rapid-bgp-router-updates.html}
+}
+
+@misc{fb-bgp-outage,
+ title={More details about the October 4 outage},
+ author={Santosh Janardhan},
+ year={2021},
+ url={https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/}
+}
+
+@misc{isp-bgp-outage,
+ title={Grave flaws in BGP Error handling},
+ author={Ben Cartwright-Cox},
+ year={2023},
+ url={https://edgecast.medium.com/the-cdn-edge-brings-compute-closer-to-where-it-is-needed-most-d4a3f4107b11}
+}
 
 
 
