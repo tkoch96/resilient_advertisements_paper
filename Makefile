@@ -87,7 +87,7 @@ $(NAME).tex: $(NAME).trig
 	fi
 	# Google docs now include comments inside of [letter], so remove that.
 	sed -i'orig' 's/[{][[][}][a-z].*[{][]][}]//g' $(NAME).tex
-
+	sed -i'orig' 's/\\hypersetup{draft}/% \\hypersetup{draft}/' $(NAME).tex
 # Iterate on latex until cross references don't change
 $(NAME).pdf: $(NAME).tex
 	pdflatex $(NAME)
