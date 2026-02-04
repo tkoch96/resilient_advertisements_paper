@@ -2781,7 +2781,7 @@ FUNCTION { presort }
 
 ITERATE { presort }
 
-SORT             % by label, year, author/editor, title
+% SORT             % by label, year, author/editor, title
 
 % From plainnat.bst
 STRINGS { longest.label }
@@ -2862,7 +2862,7 @@ FUNCTION { bib.sort.order }
 
 ITERATE { bib.sort.order }
 
-SORT             % by sort.label, year, title --- giving final bib. order.
+% SORT             % by sort.label, year, title --- giving final bib. order.
 
 FUNCTION { begin.bib }
 {
