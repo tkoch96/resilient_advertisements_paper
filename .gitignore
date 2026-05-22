@@ -1,2 +1,22 @@
-credentials/token.pickle
-resilience.*
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lot
+*.lof
+*.nav
+*.snm
+*.vrb
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.run.xml
+*-blx.bib
+
+# Editor / OS junk
+*~
+*.swp
+.DS_Store
