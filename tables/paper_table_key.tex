@@ -3,21 +3,27 @@
 \centering
 \setlength{\tabcolsep}{2pt}
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{lrrrrrrrrrrrrr}
-\toprule
-Objectives & \multicolumn{2}{c}{\makecell{Latency +\\Maximum Link\\Utilization}} & \multicolumn{5}{c}{\makecell{Failure\\Robustness}} & \multicolumn{2}{c}{\makecell{Traffic\\Classes}} & \multicolumn{1}{c}{\makecell{Latency\\Sensitive\\Services}} & \multicolumn{1}{c}{\makecell{Traffic Cost\\Across Sites}} & \multicolumn{2}{c}{\makecell{Frozen\\Failover}} \\
-\cmidrule(lr){2-3}\cmidrule(lr){4-8}\cmidrule(lr){9-10}\cmidrule(lr){11-11}\cmidrule(lr){12-12}\cmidrule(lr){13-14}
-Method & Latency (ms) & \makecell{Maximum link\\utilization} & Latency (ms) & \makecell{\% cong\\ingress-fail} & \makecell{\% cong\\site-fail} & \makecell{Flash crowd\\intensity} & \makecell{Diurnal\\intensity} & \makecell{HPrio\\latency (ms)} & \makecell{Crit bulk\\ratio} & \makecell{\% within\\10ms of\\optimal} & \makecell{Wgt avg site\\cost} & \makecell{Steady\\latency (ms)} & \makecell{Failure\\latency (ms)} \\
-\midrule
-\expensive & 29.05 & 0.88 & 29.34 & 0.00 & 0.20 & 34.40 & 14.10 & 29.04 & 5.62 & 87.12 & 0.5436 & 29.32 & 29.36 \\
-\sparse & \textbf{30.39} & \textbf{0.88} & \textbf{30.31} & \textbf{0.00} & \textbf{2.22} & \textbf{33.64} & \textbf{13.07} & \textbf{31.34} & \textbf{4.35} & \textbf{83.70} & \textbf{0.5574} & \textbf{32.07} & \textbf{32.18} \\
-\painter & 33.71 & 0.90 & 33.44 & 0.00 & 14.05 & 30.97 & 10.62 & 33.75 & 1.29 & 79.00 & 0.5802 & 38.95 & 39.05 \\
-\ucast & 34.17 & 0.89 & 34.64 & 0.00 & 15.02 & 33.64 & 12.66 & 34.24 & 2.74 & 75.97 & 0.5644 & 36.30 & 36.38 \\
-\anyopt & 46.19 & 0.91 & 47.29 & 8.88 & 88.45 & 30.21 & 10.21 & 46.14 & 1.19 & 68.20 & 0.5875 & 47.52 & 47.53 \\
-\acast & 51.22 & 0.91 & 52.02 & 89.02 & 92.43 & 30.21 & 9.80 & 51.75 & 0.25 & 67.33 & 0.5921 & 51.76 & 51.49 \\
-\bottomrule
+\begin{tabular}{|l|rr|rrrrr|rr|rr|r|r|}
+\hline
+Objectives & \multicolumn{2}{c|}{\makecell{Latency +\\Maximum Link\\Utilization}} & \multicolumn{5}{c|}{\makecell{Dynamic\\Traffic\\Failover\\(MPQUIC)}} & \multicolumn{2}{c|}{\makecell{Static\\Traffic\\Failover\\(DNS)}} & \multicolumn{2}{c|}{\makecell{Traffic\\Classes}} & \multicolumn{1}{c|}{\makecell{Latency\\Sensitive\\Services}} & \multicolumn{1}{c|}{\makecell{Traffic Cost\\Across Sites}} \\
+\hline
+Method & Latency (ms) & \makecell{Maximum link\\utilization} & Latency (ms) & \makecell{\% cong\\ingress-fail} & \makecell{\% cong\\site-fail} & \makecell{Flash crowd\\intensity\\(\%)} & \makecell{Diurnal\\intensity\\(\%)} & \makecell{Steady\\latency (ms)} & \makecell{Failure\\latency (ms)} & \makecell{HPrio\\latency (ms)} & \makecell{Crit bulk\\ratio} & \makecell{\% within\\10ms of\\optimal} & \makecell{Wgt avg site\\cost (\%)} \\
+\hline
+\expensive$^{1}$ & 29.05 & 0.88 & 29.34 & 0.00 & 0.20 & 100.0 & 100.0 & 29.32 & 29.36 & 29.04 & 5.62 & 87.12 & 0.0 \\
+\hline
+\sparse & \textbf{30.39} & \textbf{0.88} & \textbf{30.31} & \textbf{0.00} & \textbf{2.22} & \textbf{81.8} & \textbf{76.2} & \textbf{32.07} & \textbf{32.18} & \textbf{31.34} & \textbf{4.35} & \textbf{83.70} & \textbf{28.5} \\
+\hline
+\painter & 33.71 & 0.90 & 33.44 & 0.00 & 14.05 & 18.2 & 19.0 & 38.95 & 39.05 & 33.75 & 1.29 & 79.00 & 75.5 \\
+\hline
+\ucast & 34.17 & 0.89 & 34.64 & 0.00 & 15.02 & 81.8 & 66.7 & 36.30 & 36.38 & 34.24 & 2.74 & 75.97 & 42.9 \\
+\hline
+\anyopt & 46.19 & 0.91 & 47.29 & 8.88 & 88.45 & 0.0 & 9.5 & 47.52 & 47.53 & 46.14 & 1.19 & 68.20 & 90.5 \\
+\hline
+\acast & 51.22 & 0.91 & 52.02 & 89.02 & 92.43 & 0.0 & 0.0 & 51.76 & 51.49 & 51.75 & 0.25 & 67.33 & 100.0 \\
+\hline
+\multicolumn{14}{l}{\footnotesize $^{1}$ This is an unrealistic optimal, included for comparison.} \\
 \end{tabular}
 }
-\caption{Performance of all methods across objectives. \sparse outperforms every methodology on every metric. Frozen failover columns fix each user's prefix allocation before the failure (no re-steering); the \expensive row there is the re-optimized ceiling.}
+\caption{Performance of all methods across objectives. \sparse outperforms every methodology on every metric. Site cost is normalized so that \expensive is 0 and \acast is 100. Flash crowd and diurnal intensity are normalized so that \acast is 0 and \expensive is 100. Static traffic failover columns fix each user's prefix allocation before the failure (no re-steering); the \expensive row there is the re-optimized ceiling.}
 \label{tab:paper_table}
 \end{table*}
