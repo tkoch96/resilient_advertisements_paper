@@ -7,19 +7,19 @@
 \hline
 Objectives & \multicolumn{2}{c|}{\makecell{Latency + Maximum Link\\Utilization}} & \multicolumn{5}{c|}{Dynamic Traffic Failover} & \multicolumn{2}{c|}{Static Traffic Failover} & \multicolumn{1}{c|}{\makecell{Latency\\Sensitive\\Services}} & \multicolumn{2}{c|}{Traffic Classes} & \multicolumn{1}{c|}{\makecell{Traffic Cost\\Across Sites}} \\
 \hline
-Method & Latency (ms) & \makecell{Maximum link\\utilization} & Latency (ms) & \makecell{Ingress fail:\\latency subopt\\(ms) / \% cong} & \makecell{Site fail: latency\\subopt (ms) / \%\\cong} & \makecell{Flash crowd\\intensity\\(\%)} & \makecell{Diurnal\\intensity\\(\%)} & \makecell{Steady\\latency (ms)} & \makecell{Ingress fail:\\latency (ms) / \%\\cong} & \makecell{\% beyond\\10ms of\\optimal} & \makecell{HPrio\\latency (ms)} & \makecell{Crit bulk\\ratio} & \makecell{Wgt avg site\\cost (\%)} \\
+Method & Latency (ms) & \makecell{Maximum link\\utilization\\(vs anycast)} & Latency (ms) & \makecell{Ingress fail:\\latency subopt\\(ms) / \% cong} & \makecell{Site fail: latency\\subopt (ms) / \%\\cong} & \makecell{Flash crowd\\intensity\\(vs anycast)} & \makecell{Diurnal\\intensity\\(vs anycast)} & \makecell{Steady\\latency (ms)} & \makecell{Ingress fail:\\latency (ms) / \%\\cong} & \makecell{\% beyond\\10ms of\\optimal} & \makecell{HPrio\\latency (ms)} & \makecell{Crit bulk\\ratio} & \makecell{Wgt avg site\\cost (vs\\anycast)} \\
 \hline
-\expensive$^{1}$ & 29.05 & 0.88 & 29.34 & 0.00 / 0.00 & 0.00 / 0.20 & 100.0 & 100.0 & 29.32 & 29.36 / 0.00 & 12.88 & 29.04 & 5.62 & 0.0 \\
+\expensive$^{1}$ & 29.05 & 0.97 & 29.34 & 0.00 / 0.00 & 0.00 / 0.20 & 1.14 & 1.44 & 29.32 & 29.36 / 0.00 & 12.88 & 29.04 & 5.62 & 0.92 \\
 \hline
-\sparse & \textbf{30.39} & \textbf{0.88} & \textbf{30.31} & \textbf{6.35} / \textbf{0.00} & \textbf{-6.77} / \textbf{2.22} & \textbf{81.8} & \textbf{76.2} & \textbf{32.07} & \textbf{32.18} / \textbf{0.06} & \textbf{16.30} & \textbf{31.34} & \textbf{4.35} & \textbf{28.5} \\
+\sparse & \textbf{30.39} & \textbf{0.97} & \textbf{30.31} & \textbf{6.35} / \textbf{0.00} & \textbf{-6.77} / \textbf{2.22} & \textbf{1.11} & \textbf{1.33} & \textbf{32.07} & \textbf{32.18} / \textbf{0.06} & \textbf{16.30} & \textbf{31.34} & \textbf{4.35} & \textbf{0.94} \\
 \hline
-\painter & 33.71 & 0.90 & 33.44 & 20.44 / 0.00 & 44.31 / 14.05 & 18.2 & 19.0 & 38.95 & 39.05 / 0.25 & 21.00 & 33.75 & 1.29 & 75.5 \\
+\painter & 33.71 & 0.99 & 33.44 & 20.44 / 0.00 & 44.31 / 14.05 & 1.03 & 1.08 & 38.95 & 39.05 / 0.25 & 21.00 & 33.75 & 1.29 & 0.98 \\
 \hline
-\ucast & 34.17 & 0.89 & 34.64 & 17.80 / 0.00 & 73.59 / 15.02 & 81.8 & 66.7 & 36.30 & 36.38 / 0.17 & 24.03 & 34.24 & 2.74 & 42.9 \\
+\ucast & 34.17 & 0.98 & 34.64 & 17.80 / 0.00 & 73.59 / 15.02 & 1.11 & 1.29 & 36.30 & 36.38 / 0.17 & 24.03 & 34.24 & 2.74 & 0.95 \\
 \hline
-\anyopt & 46.19 & 0.91 & 47.29 & 88.14 / 8.88 & 2821.69 / 88.45 & 0.0 & 9.5 & 47.52 & 47.53 / 0.18 & 31.80 & 46.14 & 1.19 & 90.5 \\
+\anyopt & 46.19 & 1.00 & 47.29 & 88.14 / 8.88 & 2821.69 / 88.45 & 1.00 & 1.04 & 47.52 & 47.53 / 0.18 & 31.80 & 46.14 & 1.19 & 0.99 \\
 \hline
-\acast & 51.22 & 0.91 & 52.02 & 1215.22 / 89.02 & 4801.23 / 92.43 & 0.0 & 0.0 & 51.76 & 51.49 / 0.38 & 32.67 & 51.75 & 0.25 & 100.0 \\
+\acast & 51.22 & 1.00 & 52.02 & 1215.22 / 89.02 & 4801.23 / 92.43 & 1.00 & 1.00 & 51.76 & 51.49 / 0.38 & 32.67 & 51.75 & 0.25 & 1.00 \\
 \hline
 \multicolumn{14}{l}{\footnotesize $^{1}$ An unrealistic optimal, included for comparison.} \\
 \end{tabular}
