@@ -7,19 +7,19 @@
 \hline
 Objectives & \multicolumn{2}{c|}{\parbox{3.4cm}{\centering \latmlu \\ (\cref{sec:latmlu_on_internet,sec:eval-steady-state})}} & \multicolumn{6}{c|}{\parbox{10.2cm}{\centering \dtf \\ (\cref{sec:failure_robustness_on_internet,sec:eval-failure})}} & \multicolumn{5}{c|}{\parbox{8.5cm}{\centering \stf \\ (\cref{sec:eval_stf})}} & \multicolumn{1}{c|}{\parbox{1.9cm}{\centering \small \lss \\ (\cref{sec:eval_lss})}} & \multicolumn{2}{c|}{\parbox{3.4cm}{\centering \prios \\ (\cref{sec:eval-multiple-traffic-classes})}} & \multicolumn{1}{c|}{\parbox{1.9cm}{\centering \small \sitecost \\ (\cref{sec:eval-per-site-costs})}} \\
 \hline
-Method & \makecell{Latency\\(ms)} & \makecell{Maximum link\\utilization\\(vs anycast)} & \makecell{Latency\\(ms)} & \makecell{Ingress fail:\\latency (ms) / \%\\cong} & \makecell{Affected\\latency\\ingress-fail\\(ms)} & \makecell{Site fail: latency\\(ms) / \% cong} & \makecell{Affected\\latency\\site-fail\\(ms)} & \makecell{Flash\\Crowd/Diurnal\\Intensity (vs\\anycast)} & \makecell{Steady\\latency (ms)} & \makecell{Ingress fail:\\latency (ms) / \%\\cong} & \makecell{Affected\\latency\\ingress-fail\\(ms)} & \makecell{Site fail: latency\\(ms) / \% cong} & \makecell{Affected\\latency\\site-fail\\(ms)} & \makecell{\% beyond\\10ms of\\optimal} & \makecell{HPrio\\latency (ms)} & \makecell{Crit bulk\\ratio} & \makecell{Wgt avg site\\cost (vs\\anycast)} \\
+Method & \makecell{Latency\\(ms)} & \makecell{Maximum link\\utilization\\(vs anycast)} & \makecell{Latency\\(ms)} & \makecell{Ingress fail:\\latency (ms) / \%\\cong} & \makecell{Affected\\latency\\ingress-fail\\(ms)} & \makecell{Site fail: latency\\(ms) / \% cong} & \makecell{Affected\\latency\\site-fail\\(ms)} & \makecell{Flash\\Crowd/Diurnal\\Intensity (vs\\anycast)} & \makecell{Steady\\latency (ms)} & \makecell{Ingress fail:\\latency (ms) / \%\\cong / \% no-route} & \makecell{Affected\\latency\\ingress-fail\\(ms)} & \makecell{Site fail: latency\\(ms) / \% cong / \%\\no-route} & \makecell{Affected\\latency\\site-fail\\(ms)} & \makecell{\% beyond\\10ms of\\optimal} & \makecell{HPrio\\latency (ms)} & \makecell{Crit bulk\\ratio} & \makecell{Wgt avg site\\cost (vs\\anycast)} \\
 \hline
-{\footnotesize \expensive$^{1}$} & 29.1 & 0.966 & 29.3 & 29.4 / 0.00 & 37.4 & 30.9 / 0.06 & 61.5 & 1.39 / 1.44 & 29.3 & 29.4 / 0.00 & 39.7 & 32.2 / 0.51 & 65.3 & 12.9 & 29.0 & 5.62 & 0.918 \\
+{\footnotesize \expensive$^{1}$} & 29.1 & 0.966 & 29.3 & 29.4 / 0.00 & 37.4 & 30.9 / 0.06 & 61.5 & 1.39 / 1.44 & 29.3 & 29.4 / 0.00 / 0.00 & 39.7 & 32.2 / 0.51 / 0.00 & 65.3 & 12.9 & 29.0 & 5.62 & 0.918 \\
 \hline
-\sparse & \textbf{30.4} & \textbf{0.967} & \textbf{30.3} & \textbf{30.4} / \textbf{0.00} & \textbf{43.3} & \textbf{32.1} / \textbf{0.59} & \textbf{68.2} & \textbf{1.26} / \textbf{1.33} & \textbf{32.1} & \textbf{32.2} / \textbf{0.06} & 109.2 & \textbf{32.3} / 7.80 & 149.2 & \textbf{16.3} & \textbf{31.3} & \textbf{4.35} & \textbf{0.941} \\
+\sparse & \textbf{30.4} & \textbf{0.967} & \textbf{30.3} & \textbf{30.4} / \textbf{0.00} & \textbf{43.3} & \textbf{32.1} / \textbf{0.59} & \textbf{68.2} & \textbf{1.26} / \textbf{1.33} & \textbf{32.1} & \textbf{32.2} / \textbf{0.06} / \textbf{0.00} & 109.2 & \textbf{32.3} / 7.80 / 0.18 & 149.2 & \textbf{16.3} & \textbf{31.3} & \textbf{4.35} & \textbf{0.941} \\
 \hline
-\painter & 33.7 & 0.995 & 33.4 & 33.6 / 0.00 & 57.3 & 37.0 / 3.11 & 86.4 & 1.06 / 1.08 & 38.9 & 39.0 / 0.25 & 155.8 & 39.0 / 8.43 & 158.4 & 21.0 & 33.7 & 1.29 & 0.980 \\
+\painter & 33.7 & 0.995 & 33.4 & 33.6 / 0.00 & 57.3 & 37.0 / 3.11 & 86.4 & 1.06 / 1.08 & 38.9 & 39.0 / 0.25 / 0.00 & 155.8 & 39.0 / 8.43 / 0.11 & 158.4 & 21.0 & 33.7 & 1.29 & 0.980 \\
 \hline
-\ucast & 34.2 & 0.978 & 34.6 & 34.7 / 0.00 & 53.4 & 37.1 / 2.27 & 86.1 & 1.26 / 1.29 & 36.3 & 36.4 / 0.17 & \textbf{104.3} & 36.4 / \textbf{3.74} & 150.4 & 24.0 & 34.2 & 2.74 & 0.953 \\
+\ucast & 34.2 & 0.978 & 34.6 & 34.7 / 0.00 & 53.4 & 37.1 / 2.27 & 86.1 & 1.26 / 1.29 & 36.3 & 36.4 / 0.17 / 0.00 & \textbf{104.3} & 36.4 / \textbf{3.74} / 1.58 & 150.4 & 24.0 & 34.2 & 2.74 & 0.953 \\
 \hline
-\anyopt & 46.2 & 0.999 & 47.3 & 47.4 / 0.20 & 112.0 & 37.9 / 19.70 & 97.9 & 1.00 / 1.04 & 47.5 & 47.5 / 0.18 & 154.4 & 45.8 / 6.83 & 134.4 & 31.8 & 46.1 & 1.19 & 0.992 \\
+\anyopt & 46.2 & 0.999 & 47.3 & 47.4 / 0.20 & 112.0 & 37.9 / 19.70 & 97.9 & 1.00 / 1.04 & 47.5 & 47.5 / 0.18 / 0.00 & 154.4 & 45.8 / 6.83 / \textbf{0.00} & 134.4 & 31.8 & 46.1 & 1.19 & 0.992 \\
 \hline
-\acast & 51.2 & 1.000 & 52.0 & 51.8 / 0.37 & 121.8 & 50.0 / 4.92 & 121.5 & 1.00 / 1.00 & 51.8 & 51.5 / 0.38 & 141.4 & 49.2 / 6.74 & \textbf{127.0} & 32.7 & 51.7 & 0.25 & 1.000 \\
+\acast & 51.2 & 1.000 & 52.0 & 51.8 / 0.37 & 121.8 & 50.0 / 4.92 & 121.5 & 1.00 / 1.00 & 51.8 & 51.5 / 0.38 / 0.00 & 141.4 & 49.2 / 6.74 / 0.00 & \textbf{127.0} & 32.7 & 51.7 & 0.25 & 1.000 \\
 \hline
 \multicolumn{18}{l}{\footnotesize $^{1}$ An unrealistic optimal, included for comparison.} \\
 \end{tabular}
