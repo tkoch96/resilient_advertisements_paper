@@ -3,27 +3,27 @@
 \centering
 \setlength{\tabcolsep}{2pt}
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{|l|rr|rrrrr|rr|r|rr|r|}
+\begin{tabular}{|l|rr|rrrrr|rrr|r|rr|r|}
 \hline
-Objectives & \multicolumn{2}{c|}{\makecell{Latency + Maximum Link\\Utilization}} & \multicolumn{5}{c|}{Dynamic Traffic Failover} & \multicolumn{2}{c|}{Static Traffic Failover} & \multicolumn{1}{c|}{\makecell{Latency\\Sensitive\\Services}} & \multicolumn{2}{c|}{Traffic Classes} & \multicolumn{1}{c|}{\makecell{Traffic Cost\\Across Sites}} \\
+Objectives & \multicolumn{2}{c|}{\makecell{Latency + Maximum Link\\Utilization}} & \multicolumn{5}{c|}{Dynamic Traffic Failover} & \multicolumn{3}{c|}{Static Traffic Failover} & \multicolumn{1}{c|}{\makecell{Latency\\Sensitive\\Services}} & \multicolumn{2}{c|}{Traffic Classes} & \multicolumn{1}{c|}{\makecell{Traffic Cost\\Across Sites}} \\
 \hline
-Method & Latency (ms) & \makecell{Maximum link\\utilization} & Latency (ms) & \makecell{\% cong\\ingress-fail} & \makecell{\% cong\\site-fail} & \makecell{Flash crowd\\intensity\\(\%)} & \makecell{Diurnal\\intensity\\(\%)} & \makecell{Steady\\latency (ms)} & \makecell{Latency\\ingress-fail\\(ms)} & \makecell{\% beyond\\10ms of\\optimal} & \makecell{HPrio\\latency (ms)} & \makecell{Crit bulk\\ratio} & \makecell{Wgt avg site\\cost (\%)} \\
+Method & Latency (ms) & \makecell{Maximum link\\utilization} & Latency (ms) & \makecell{\% cong\\ingress-fail} & \makecell{\% cong\\site-fail} & \makecell{Flash crowd\\intensity\\(\%)} & \makecell{Diurnal\\intensity\\(\%)} & \makecell{Latency\\ingress-fail\\(ms)} & \makecell{\% cong\\ingress-fail} & \makecell{\% no-route\\ingress-fail} & \makecell{\% beyond\\10ms of\\optimal} & \makecell{HPrio\\latency (ms)} & \makecell{Crit bulk\\ratio} & \makecell{Wgt avg site\\cost (\%)} \\
 \hline
-\expensive$^{1}$ & 29.05 & 0.88 & 29.34 & 0.00 & 0.20 & 100.0 & 100.0 & 29.32 & 29.36 & 12.88 & 29.04 & 5.62 & 0.0 \\
+\expensive$^{1}$ & 29.05 & 0.88 & 29.34 & 0.00 & 0.20 & 100.0 & 100.0 & 29.36 & 0.00 & 0.00 & 12.88 & 29.04 & 5.62 & 0.0 \\
 \hline
-\sparse & \textbf{30.39} & \textbf{0.88} & \textbf{30.31} & \textbf{0.00} & \textbf{2.22} & \textbf{81.8} & \textbf{76.2} & \textbf{32.07} & \textbf{32.18} & \textbf{16.30} & \textbf{31.34} & \textbf{4.35} & \textbf{28.5} \\
+\sparse & \textbf{30.39} & \textbf{0.88} & \textbf{30.31} & \textbf{0.00} & \textbf{2.22} & \textbf{81.8} & \textbf{76.2} & \textbf{32.18} & \textbf{0.06} & \textbf{0.00} & \textbf{16.30} & \textbf{31.34} & \textbf{4.35} & \textbf{28.5} \\
 \hline
-\painter & 33.71 & 0.90 & 33.44 & 0.00 & 14.05 & 18.2 & 19.0 & 38.95 & 39.05 & 21.00 & 33.75 & 1.29 & 75.5 \\
+\painter & 33.71 & 0.90 & 33.44 & 0.00 & 14.05 & 18.2 & 19.0 & 39.05 & 0.25 & 0.00 & 21.00 & 33.75 & 1.29 & 75.5 \\
 \hline
-\ucast & 34.17 & 0.89 & 34.64 & 0.00 & 15.02 & 81.8 & 66.7 & 36.30 & 36.38 & 24.03 & 34.24 & 2.74 & 42.9 \\
+\ucast & 34.17 & 0.89 & 34.64 & 0.00 & 15.02 & 81.8 & 66.7 & 36.38 & 0.17 & 0.00 & 24.03 & 34.24 & 2.74 & 42.9 \\
 \hline
-\anyopt & 46.19 & 0.91 & 47.29 & 8.88 & 88.45 & 0.0 & 9.5 & 47.52 & 47.53 & 31.80 & 46.14 & 1.19 & 90.5 \\
+\anyopt & 46.19 & 0.91 & 47.29 & 8.88 & 88.45 & 0.0 & 9.5 & 47.53 & 0.18 & 0.00 & 31.80 & 46.14 & 1.19 & 90.5 \\
 \hline
-\acast & 51.22 & 0.91 & 52.02 & 89.02 & 92.43 & 0.0 & 0.0 & 51.76 & 51.49 & 32.67 & 51.75 & 0.25 & 100.0 \\
+\acast & 51.22 & 0.91 & 52.02 & 89.02 & 92.43 & 0.0 & 0.0 & 51.49 & 0.38 & 0.00 & 32.67 & 51.75 & 0.25 & 100.0 \\
 \hline
-\multicolumn{14}{l}{\footnotesize $^{1}$ This is an unrealistic optimal, included for comparison.} \\
+\multicolumn{15}{l}{\footnotesize $^{1}$ This is an unrealistic optimal, included for comparison.} \\
 \end{tabular}
 }
-\caption{Performance of all methods across objectives. \sparse outperforms every methodology on every metric. Site cost is normalized so that \expensive is 0 and \acast is 100. Flash crowd and diurnal intensity are normalized so that \acast is 0 and \expensive is 100. Static traffic failover columns fix each user's prefix allocation before the failure (no re-steering); the \expensive row there is the re-optimized ceiling.}
+\caption{Performance of all methods across objectives.}
 \label{tab:paper_table}
 \end{table*}
