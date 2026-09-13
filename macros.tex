@@ -23,6 +23,17 @@
 %% editing notes
 \newcommand{\tbd}[1]{{\color{red}{\bf TBD: #1}}}
 
+%% Named numbers (2026-09-12): \pn{key} prints a number defined in
+%% tables/paper_numbers.tex, which evaluations/paper_numbers.py in the code
+%% repo generates from the paper-of-record artifacts (make numbers). A key
+%% with no definition renders red as TBD:<key>, so the outstanding
+%% placeholders are whatever is still red. Keys are dotted token paths, e.g.
+%% \pn{dtf.popfail.all.lat.mean.sculptor.worsethan.opp}; `python -m
+%% evaluations.paper_numbers explain <key>` prints what one means.
+\newcommand{\pndef}[2]{\expandafter\gdef\csname pn@#1\endcsname{#2}}
+\newcommand{\pn}[1]{\ifcsname pn@#1\endcsname\csname pn@#1\endcsname\else{\color{red}{\bf TBD:\detokenize{#1}}}\fi}
+\IfFileExists{tables/paper_numbers.tex}{\input{tables/paper_numbers.tex}}{}
+
 
 %% for referring to lines in graphs, colors text and background
 % \definecolor{shadecolor}{RGB}{150,150,150}

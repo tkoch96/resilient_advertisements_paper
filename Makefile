@@ -88,8 +88,23 @@ $(NAME).tex: $(NAME).trig
 	# Google docs now include comments inside of [letter], so remove that.
 	sed -i'orig' 's/[{][[][}][a-z].*[{][]][}]//g' $(NAME).tex
 	sed -i'orig' 's/\\hypersetup{draft}/% \\hypersetup{draft}/' $(NAME).tex
+# Named numbers (2026-09-12): tables/paper_numbers.tex defines every
+# \pn{key} the doc references, from the code repo's paper-of-record
+# artifacts. Regenerated on every build so a new key in the doc resolves
+# without a manual step; `make check-numbers` lists what is still undefined.
+CODE_DIR ?= $(HOME)/Documents/sparse_advertisements_code
+NUMBERS = $(PYTHON) $(CODE_DIR)/evaluations/paper_numbers.py --paper-dir .
+
+# never let a numbers failure break the paper build: the previous
+# tables/paper_numbers.tex (or none) is used and a warning is printed
+numbers: $(NAME).tex
+	@$(NUMBERS) emit || echo "[numbers] WARN: emit failed (PYTHON=$(PYTHON) CODE_DIR=$(CODE_DIR)); keeping the existing tables/paper_numbers.tex"
+
+check-numbers: $(NAME).tex
+	$(NUMBERS) check
+
 # Iterate on latex until cross references don't change
-$(NAME).pdf: $(NAME).tex
+$(NAME).pdf: $(NAME).tex numbers
 	pdflatex $(NAME)
 	bibtex $(NAME)
 	pdflatex $(NAME)
