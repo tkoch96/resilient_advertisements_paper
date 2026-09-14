@@ -1,6 +1,6 @@
 {
  "code_sha": "8365003",
- "generated": "2026-09-13T17:33",
+ "generated": "2026-09-13T20:25",
  "keys": {
   "dtf.diurnal.all.intensity.mean.anycast": {
    "doc": "Dynamic Traffic Failover objective (\\dtf); diurnal traffic swing: every metro follows the measured daily profile; averaged over ALL users (unaffected users included; congested volume excluded from latency averages); traffic multiplier the deployment absorbs before any link congests; mean over the evaluated deployments (the table value); Anycast: a single prefix everywhere",
@@ -84,8 +84,8 @@
    "source": "paper_table_full.csv[SCULPTOR][Latency + g*Resilience|Diurnal resilience] vs paper_table_full.csv[Anycast][Latency + g*Resilience|Diurnal resilience]",
    "text": "32",
    "used_at": [
-    "resilience.tex:1417",
-    "resilience.md:731"
+    "resilience.tex:1389",
+    "resilience.md:728"
    ],
    "value": 32.01955361425494
   },
@@ -185,8 +185,8 @@
    "source": "paper_table_full.csv[Unicast][Latency + g*Resilience|Diurnal resilience] / Anycast",
    "text": "1.26",
    "used_at": [
-    "resilience.tex:1419",
-    "resilience.md:733"
+    "resilience.tex:1391",
+    "resilience.md:730"
    ],
    "value": 1.2645044750834293
   },
@@ -272,8 +272,8 @@
    "source": "paper_table_full.csv[SCULPTOR][Latency + g*Resilience|Flash-crowd resilience] vs paper_table_full.csv[Anycast][Latency + g*Resilience|Flash-crowd resilience]",
    "text": "26",
    "used_at": [
-    "resilience.tex:1415",
-    "resilience.md:730"
+    "resilience.tex:1387",
+    "resilience.md:727"
    ],
    "value": 26.34676903390915
   },
@@ -373,8 +373,8 @@
    "source": "paper_table_full.csv[Unicast][Latency + g*Resilience|Flash-crowd resilience] / Anycast",
    "text": "1.22",
    "used_at": [
-    "resilience.tex:1418",
-    "resilience.md:732"
+    "resilience.tex:1390",
+    "resilience.md:729"
    ],
    "value": 1.2153846153846155
   },
@@ -936,8 +936,8 @@
    "source": "paper_table_full.csv[PAINTER][Latency + g*Resilience|Subopt PoP-fail (ms)]",
    "text": "23.9",
    "used_at": [
-    "resilience.tex:1395",
-    "resilience.md:715"
+    "resilience.tex:1367",
+    "resilience.md:712"
    ],
    "value": 23.9496
   },
@@ -953,8 +953,8 @@
    "source": "paper_table_full.csv[SCULPTOR][Latency + g*Resilience|Subopt PoP-fail (ms)]",
    "text": "2.8",
    "used_at": [
-    "resilience.tex:1394",
-    "resilience.md:715"
+    "resilience.tex:1366",
+    "resilience.md:712"
    ],
    "value": 2.7691
   },
@@ -970,8 +970,8 @@
    "source": "paper_table_full.csv[Unicast][Latency + g*Resilience|Subopt PoP-fail (ms)]",
    "text": "27.7",
    "used_at": [
-    "resilience.tex:1396",
-    "resilience.md:715"
+    "resilience.tex:1368",
+    "resilience.md:712"
    ],
    "value": 27.7495
   },
@@ -1029,8 +1029,8 @@
    "source": "paper_table_full.csv[PAINTER][Latency + g*Resilience|% cong PoP-fail]",
    "text": "11.79",
    "used_at": [
-    "resilience.tex:1392",
-    "resilience.md:715"
+    "resilience.tex:1364",
+    "resilience.md:712"
    ],
    "value": 11.7924
   },
@@ -1046,8 +1046,8 @@
    "source": "paper_table_full.csv[SCULPTOR][Latency + g*Resilience|% cong PoP-fail]",
    "text": "5.14",
    "used_at": [
-    "resilience.tex:1390",
-    "resilience.md:715"
+    "resilience.tex:1362",
+    "resilience.md:712"
    ],
    "value": 5.1429
   },
@@ -1063,8 +1063,8 @@
    "source": "paper_table_full.csv[Unicast][Latency + g*Resilience|% cong PoP-fail]",
    "text": "7.31",
    "used_at": [
-    "resilience.tex:1391",
-    "resilience.md:715"
+    "resilience.tex:1363",
+    "resilience.md:712"
    ],
    "value": 7.3131
   },
@@ -1318,8 +1318,8 @@
    "source": "paper_table_full.csv[SCULPTOR][Latency + g*Resilience|Affected latency PoPP-fail (ms)] vs paper_table_full.csv[PAINTER][Latency + g*Resilience|Affected latency PoPP-fail (ms)]",
    "text": "19",
    "used_at": [
-    "resilience.tex:347",
-    "resilience.md:191"
+    "resilience.tex:334",
+    "resilience.md:189"
    ],
    "value": 18.70884534219885
   },
@@ -1377,8 +1377,8 @@
    "source": "paper_table_full.csv[PAINTER][Latency + g*Resilience|Subopt PoPP-fail (ms)]",
    "text": "16.7",
    "used_at": [
-    "resilience.tex:1386",
-    "resilience.md:712"
+    "resilience.tex:1358",
+    "resilience.md:709"
    ],
    "value": 16.6529
   },
@@ -1394,8 +1394,8 @@
    "source": "paper_table_full.csv[PAINTER][Latency + g*Resilience|Subopt PoPP-fail (ms)]",
    "text": "\\painter",
    "used_at": [
-    "resilience.tex:1385",
-    "resilience.md:712"
+    "resilience.tex:1357",
+    "resilience.md:709"
    ],
    "value": "\\painter"
   },
@@ -1439,8 +1439,8 @@
    "source": "paper_table_full.csv[SCULPTOR][Latency + g*Resilience|Subopt PoPP-fail (ms)]",
    "text": "6.1",
    "used_at": [
-    "resilience.tex:1383",
-    "resilience.md:712"
+    "resilience.tex:1355",
+    "resilience.md:709"
    ],
    "value": 6.1142
   },
@@ -1456,8 +1456,8 @@
    "source": "paper_table_full.csv[Unicast][Latency + g*Resilience|Subopt PoPP-fail (ms)]",
    "text": "21.0",
    "used_at": [
-    "resilience.tex:1387",
-    "resilience.md:712"
+    "resilience.tex:1359",
+    "resilience.md:709"
    ],
    "value": 20.953
   },
@@ -1793,8 +1793,8 @@
    "source": "internet.linkfail.gap.sculptor.betterthan.unicast",
    "text": "6.3",
    "used_at": [
-    "resilience.tex:334",
-    "resilience.md:188"
+    "resilience.tex:321",
+    "resilience.md:186"
    ],
    "value": 6.313000000000001
   },
@@ -1810,8 +1810,8 @@
    "source": "internet.sitefail.gap.sculptor.betterthan.unicast",
    "text": "12",
    "used_at": [
-    "resilience.tex:335",
-    "resilience.md:188"
+    "resilience.tex:322",
+    "resilience.md:186"
    ],
    "value": 12.054999999999998
   },
@@ -1827,8 +1827,8 @@
    "source": "internet.steady.gap.sculptor.betterthan.bestbaseline",
    "text": "3.6",
    "used_at": [
-    "resilience.tex:333",
-    "resilience.md:188"
+    "resilience.tex:320",
+    "resilience.md:186"
    ],
    "value": 3.5700000000000003
   },
@@ -1952,8 +1952,8 @@
    "source": "py:R(\"manual.opp_prefixes_a32\") / R(\"manual.sculptor_prefixes_a32\")",
    "text": "19",
    "used_at": [
-    "resilience.tex:236",
-    "resilience.md:157"
+    "resilience.tex:232",
+    "resilience.md:153"
    ],
    "value": 18.547619047619047
   },
@@ -1995,8 +1995,8 @@
    "source": "actual_deployment_stats.csv[linkfail][sculptor][gap]",
    "text": "7.9",
    "used_at": [
-    "resilience.tex:1302",
-    "resilience.md:677"
+    "resilience.tex:1275",
+    "resilience.md:674"
    ],
    "value": 7.93
   },
@@ -2012,8 +2012,8 @@
    "source": "actual_deployment_stats.csv[linkfail][unicast][gap]",
    "text": "14.2",
    "used_at": [
-    "resilience.tex:1306",
-    "resilience.md:677"
+    "resilience.tex:1279",
+    "resilience.md:674"
    ],
    "value": 14.243
   },
@@ -2029,8 +2029,8 @@
    "source": "actual_deployment_stats.csv[linkfail][anycast][overloaded]",
    "text": "69.0",
    "used_at": [
-    "resilience.tex:1310",
-    "resilience.md:677"
+    "resilience.tex:1282",
+    "resilience.md:674"
    ],
    "value": 68.964
   },
@@ -2046,10 +2046,10 @@
    "source": "actual_deployment_stats.csv[linkfail][painter][overloaded]",
    "text": "75.8",
    "used_at": [
-    "resilience.tex:337",
-    "resilience.tex:1309",
-    "resilience.md:188",
-    "resilience.md:677"
+    "resilience.tex:324",
+    "resilience.tex:1281",
+    "resilience.md:186",
+    "resilience.md:674"
    ],
    "value": 75.817
   },
@@ -2065,8 +2065,8 @@
    "source": "actual_deployment_stats.csv[linkfail][sculptor][within10]",
    "text": "64.5",
    "used_at": [
-    "resilience.tex:1303",
-    "resilience.md:677"
+    "resilience.tex:1276",
+    "resilience.md:674"
    ],
    "value": 64.51
   },
@@ -2082,8 +2082,8 @@
    "source": "actual_deployment_stats.csv[linkfail][unicast][within10]",
    "text": "38.2",
    "used_at": [
-    "resilience.tex:1307",
-    "resilience.md:677"
+    "resilience.tex:1280",
+    "resilience.md:674"
    ],
    "value": 38.22
   },
@@ -2099,8 +2099,8 @@
    "source": "actual_deployment_stats.csv[sitefail][sculptor][gap]",
    "text": "13.1",
    "used_at": [
-    "resilience.tex:1313",
-    "resilience.md:680"
+    "resilience.tex:1285",
+    "resilience.md:677"
    ],
    "value": 13.086
   },
@@ -2116,8 +2116,8 @@
    "source": "actual_deployment_stats.csv[sitefail][unicast][gap]",
    "text": "25.1",
    "used_at": [
-    "resilience.tex:1315",
-    "resilience.md:680"
+    "resilience.tex:1287",
+    "resilience.md:677"
    ],
    "value": 25.141
   },
@@ -2133,10 +2133,10 @@
    "source": "actual_deployment_stats.csv[sitefail][painter][overloaded]",
    "text": "95.0",
    "used_at": [
-    "resilience.tex:338",
-    "resilience.tex:1317",
-    "resilience.md:188",
-    "resilience.md:680"
+    "resilience.tex:325",
+    "resilience.tex:1289",
+    "resilience.md:186",
+    "resilience.md:677"
    ],
    "value": 94.97
   },
@@ -2152,8 +2152,8 @@
    "source": "actual_deployment_stats.csv[sitefail][sculptor][within10]",
    "text": "69.0",
    "used_at": [
-    "resilience.tex:1314",
-    "resilience.md:680"
+    "resilience.tex:1286",
+    "resilience.md:677"
    ],
    "value": 69.004
   },
@@ -2169,8 +2169,8 @@
    "source": "actual_deployment_stats.csv[sitefail][unicast][within10]",
    "text": "39.6",
    "used_at": [
-    "resilience.tex:1316",
-    "resilience.md:680"
+    "resilience.tex:1288",
+    "resilience.md:677"
    ],
    "value": 39.579
   },
@@ -2186,8 +2186,8 @@
    "source": "actual_deployment_stats.csv[steady][painter][gap]",
    "text": "5.5",
    "used_at": [
-    "resilience.tex:1290",
-    "resilience.md:669"
+    "resilience.tex:1263",
+    "resilience.md:666"
    ],
    "value": 5.496
   },
@@ -2203,8 +2203,8 @@
    "source": "actual_deployment_stats.csv[steady][painter][gap]",
    "text": "\\painter",
    "used_at": [
-    "resilience.tex:1289",
-    "resilience.md:669"
+    "resilience.tex:1262",
+    "resilience.md:666"
    ],
    "value": "\\painter"
   },
@@ -2220,10 +2220,10 @@
    "source": "actual_deployment_stats.csv[steady][sculptor][gap]",
    "text": "1.9",
    "used_at": [
-    "resilience.tex:235",
-    "resilience.tex:1285",
-    "resilience.md:156",
-    "resilience.md:669"
+    "resilience.tex:231",
+    "resilience.tex:1258",
+    "resilience.md:152",
+    "resilience.md:666"
    ],
    "value": 1.926
   },
@@ -2239,10 +2239,10 @@
    "source": "actual_deployment_stats.csv[steady][sculptor][gap]",
    "text": "65",
    "used_at": [
-    "resilience.tex:237",
-    "resilience.tex:1287",
-    "resilience.md:158",
-    "resilience.md:669"
+    "resilience.tex:233",
+    "resilience.tex:1260",
+    "resilience.md:154",
+    "resilience.md:666"
    ],
    "value": 64.95633187772926
   },
@@ -2258,8 +2258,8 @@
    "source": "actual_deployment_stats.csv[steady][painter][within10]",
    "text": "88.0",
    "used_at": [
-    "resilience.tex:1293",
-    "resilience.md:669"
+    "resilience.tex:1266",
+    "resilience.md:666"
    ],
    "value": 87.997
   },
@@ -2275,8 +2275,8 @@
    "source": "actual_deployment_stats.csv[steady][sculptor][within10]",
    "text": "91.8",
    "used_at": [
-    "resilience.tex:1291",
-    "resilience.md:669"
+    "resilience.tex:1264",
+    "resilience.md:666"
    ],
    "value": 91.787
   },
@@ -2404,8 +2404,8 @@
    "source": "paper_table_full.csv[AnyOpt][MLU|Latency (ms)] vs paper_table_full.csv[One-per-peering][MLU|Latency (ms)]",
    "text": "17.1",
    "used_at": [
-    "resilience.tex:1347",
-    "resilience.md:699"
+    "resilience.tex:1319",
+    "resilience.md:696"
    ],
    "value": 17.138
   },
@@ -2421,8 +2421,8 @@
    "source": "paper_table_full.csv[PAINTER][MLU|Latency (ms)]",
    "text": "\\painter",
    "used_at": [
-    "resilience.tex:1340",
-    "resilience.md:699"
+    "resilience.tex:1312",
+    "resilience.md:696"
    ],
    "value": "\\painter"
   },
@@ -2466,8 +2466,8 @@
    "source": "paper_table_full.csv[PAINTER][MLU|Latency (ms)] vs paper_table_full.csv[SCULPTOR][MLU|Latency (ms)]",
    "text": "3.3",
    "used_at": [
-    "resilience.tex:1341",
-    "resilience.md:699"
+    "resilience.tex:1313",
+    "resilience.md:696"
    ],
    "value": 3.3237000000000023
   },
@@ -2497,8 +2497,8 @@
    "source": "paper_table_full.csv[SCULPTOR][MLU|Latency (ms)] vs paper_table_full.csv[PAINTER][MLU|Latency (ms)]",
    "text": "10",
    "used_at": [
-    "resilience.tex:1343",
-    "resilience.md:699"
+    "resilience.tex:1315",
+    "resilience.md:696"
    ],
    "value": 9.859919547185937
   },
@@ -2514,10 +2514,10 @@
    "source": "paper_table_full.csv[SCULPTOR][MLU|Latency (ms)] vs paper_table_full.csv[One-per-peering][MLU|Latency (ms)]",
    "text": "1.3",
    "used_at": [
-    "resilience.tex:345",
-    "resilience.tex:1338",
-    "resilience.md:191",
-    "resilience.md:699"
+    "resilience.tex:332",
+    "resilience.tex:1310",
+    "resilience.md:189",
+    "resilience.md:696"
    ],
    "value": 1.3336000000000006
   },
@@ -2547,8 +2547,8 @@
    "source": "paper_table_full.csv[Unicast][MLU|Latency (ms)] vs paper_table_full.csv[One-per-peering][MLU|Latency (ms)]",
    "text": "5.1",
    "used_at": [
-    "resilience.tex:1345",
-    "resilience.md:699"
+    "resilience.tex:1317",
+    "resilience.md:696"
    ],
    "value": 5.113600000000002
   },
@@ -2676,8 +2676,8 @@
    "source": "paper_table_full.csv[One-per-peering][MLU|MLU] / 0.9091",
    "text": "0.966",
    "used_at": [
-    "resilience.tex:1352",
-    "resilience.md:699"
+    "resilience.tex:1324",
+    "resilience.md:696"
    ],
    "value": 0.96569
   },
@@ -2707,8 +2707,8 @@
    "source": "paper_table_full.csv[SCULPTOR][MLU|MLU] / 0.9091",
    "text": "0.967",
    "used_at": [
-    "resilience.tex:1351",
-    "resilience.md:699"
+    "resilience.tex:1323",
+    "resilience.md:696"
    ],
    "value": 0.96723
   },
@@ -2976,10 +2976,10 @@
    "source": "100.0 - paper_table_full.csv[SCULPTOR][Frac beyond optimal|% within 10ms] vs 100.0 - paper_table_full.csv[PAINTER][Frac beyond optimal|% within 10ms]",
    "text": "22",
    "used_at": [
-    "resilience.tex:351",
-    "resilience.tex:1464",
-    "resilience.md:191",
-    "resilience.md:752"
+    "resilience.tex:338",
+    "resilience.tex:1436",
+    "resilience.md:189",
+    "resilience.md:749"
    ],
    "value": 22.367017222984295
   },
@@ -3289,8 +3289,8 @@
    "source": "paper_table_full.csv[One-per-peering][Frac beyond optimal|% within 10ms]",
    "text": "87.1",
    "used_at": [
-    "resilience.tex:1468",
-    "resilience.md:752"
+    "resilience.tex:1440",
+    "resilience.md:749"
    ],
    "value": 87.12
   },
@@ -3306,8 +3306,8 @@
    "source": "paper_table_full.csv[PAINTER][Frac beyond optimal|% within 10ms]",
    "text": "79.0",
    "used_at": [
-    "resilience.tex:1463",
-    "resilience.md:752"
+    "resilience.tex:1435",
+    "resilience.md:749"
    ],
    "value": 79.0048
   },
@@ -3323,8 +3323,8 @@
    "source": "paper_table_full.csv[SCULPTOR][Frac beyond optimal|% within 10ms]",
    "text": "83.7",
    "used_at": [
-    "resilience.tex:1460",
-    "resilience.md:752"
+    "resilience.tex:1432",
+    "resilience.md:749"
    ],
    "value": 83.7008
   },
@@ -3340,8 +3340,8 @@
    "source": "paper_table_full.csv[SCULPTOR][Frac beyond optimal|% within 10ms] vs paper_table_full.csv[PAINTER][Frac beyond optimal|% within 10ms]",
    "text": "4.7",
    "used_at": [
-    "resilience.tex:1462",
-    "resilience.md:752"
+    "resilience.tex:1434",
+    "resilience.md:749"
    ],
    "value": 4.695999999999998
   },
@@ -3357,8 +3357,8 @@
    "source": "paper_table_full.csv[SCULPTOR][Frac beyond optimal|% within 10ms] vs paper_table_full.csv[Anycast][Frac beyond optimal|% within 10ms], paper_table_full.csv[One-per-peering][Frac beyond optimal|% within 10ms]",
    "text": "83",
    "used_at": [
-    "resilience.tex:1466",
-    "resilience.md:752"
+    "resilience.tex:1438",
+    "resilience.md:749"
    ],
    "value": 82.72616587771103
   },
@@ -3641,8 +3641,8 @@
    "source": "paper_table_full.csv[One-per-peering][High + Low Priority Traffic|Crit bulk ratio]",
    "text": "5.62",
    "used_at": [
-    "resilience.tex:1505",
-    "resilience.md:768"
+    "resilience.tex:1477",
+    "resilience.md:765"
    ],
    "value": 5.623
   },
@@ -3658,8 +3658,8 @@
    "source": "paper_table_full.csv[PAINTER][High + Low Priority Traffic|Crit bulk ratio]",
    "text": "1.29",
    "used_at": [
-    "resilience.tex:1504",
-    "resilience.md:768"
+    "resilience.tex:1476",
+    "resilience.md:765"
    ],
    "value": 1.2908
   },
@@ -3675,8 +3675,8 @@
    "source": "paper_table_full.csv[SCULPTOR][High + Low Priority Traffic|Crit bulk ratio]",
    "text": "4.35",
    "used_at": [
-    "resilience.tex:1499",
-    "resilience.md:768"
+    "resilience.tex:1471",
+    "resilience.md:765"
    ],
    "value": 4.3516
   },
@@ -3692,12 +3692,12 @@
    "source": "paper_table_full.csv[SCULPTOR][High + Low Priority Traffic|Crit bulk ratio] vs paper_table_full.csv[Unicast][High + Low Priority Traffic|Crit bulk ratio]",
    "text": "1.6",
    "used_at": [
-    "resilience.tex:241",
-    "resilience.tex:353",
-    "resilience.tex:1501",
-    "resilience.md:161",
-    "resilience.md:191",
-    "resilience.md:768"
+    "resilience.tex:237",
+    "resilience.tex:340",
+    "resilience.tex:1473",
+    "resilience.md:157",
+    "resilience.md:189",
+    "resilience.md:765"
    ],
    "value": 1.5871904292956927
   },
@@ -3713,8 +3713,8 @@
    "source": "paper_table_full.csv[Unicast][High + Low Priority Traffic|Crit bulk ratio]",
    "text": "2.74",
    "used_at": [
-    "resilience.tex:1503",
-    "resilience.md:768"
+    "resilience.tex:1475",
+    "resilience.md:765"
    ],
    "value": 2.7417
   },
@@ -3954,8 +3954,8 @@
    "source": "paper_table_full.csv[PAINTER][High + Low Priority Traffic|HPrio latency (ms)] vs paper_table_full.csv[One-per-peering][High + Low Priority Traffic|HPrio latency (ms)]",
    "text": "4.7",
    "used_at": [
-    "resilience.tex:1509",
-    "resilience.md:768"
+    "resilience.tex:1481",
+    "resilience.md:765"
    ],
    "value": 4.7083999999999975
   },
@@ -3985,8 +3985,8 @@
    "source": "paper_table_full.csv[SCULPTOR][High + Low Priority Traffic|HPrio latency (ms)] vs paper_table_full.csv[One-per-peering][High + Low Priority Traffic|HPrio latency (ms)]",
    "text": "2.3",
    "used_at": [
-    "resilience.tex:1507",
-    "resilience.md:768"
+    "resilience.tex:1479",
+    "resilience.md:765"
    ],
    "value": 2.3046000000000006
   },
@@ -4338,10 +4338,10 @@
    "source": "paper_table_full.csv[SCULPTOR][Site cost|Wgt avg site cost] vs paper_table_full.csv[Anycast][Site cost|Wgt avg site cost]",
    "text": "6",
    "used_at": [
-    "resilience.tex:356",
-    "resilience.tex:1552",
-    "resilience.md:191",
-    "resilience.md:801"
+    "resilience.tex:343",
+    "resilience.tex:1524",
+    "resilience.md:189",
+    "resilience.md:798"
    ],
    "value": 5.860496537746995
   },
@@ -4357,8 +4357,8 @@
    "source": "paper_table_full.csv[SCULPTOR][Site cost|Wgt avg site cost] vs paper_table_full.csv[Anycast][Site cost|Wgt avg site cost], paper_table_full.csv[One-per-peering][Site cost|Wgt avg site cost]",
    "text": "72",
    "used_at": [
-    "resilience.tex:1553",
-    "resilience.md:801"
+    "resilience.tex:1525",
+    "resilience.md:798"
    ],
    "value": 71.54639175257724
   },
@@ -4416,8 +4416,8 @@
    "source": "paper_table_full.csv[One-per-peering][Site cost|Wgt avg site cost] / Anycast",
    "text": "0.918",
    "used_at": [
-    "resilience.tex:1555",
-    "resilience.md:801"
+    "resilience.tex:1527",
+    "resilience.md:798"
    ],
    "value": 0.9180881607836514
   },
@@ -4433,8 +4433,8 @@
    "source": "paper_table_full.csv[PAINTER][Site cost|Wgt avg site cost] / Anycast",
    "text": "0.980",
    "used_at": [
-    "resilience.tex:1557",
-    "resilience.md:801"
+    "resilience.tex:1529",
+    "resilience.md:798"
    ],
    "value": 0.9799020435737208
   },
@@ -4450,8 +4450,8 @@
    "source": "paper_table_full.csv[SCULPTOR][Site cost|Wgt avg site cost] / Anycast",
    "text": "0.941",
    "used_at": [
-    "resilience.tex:1550",
-    "resilience.md:801"
+    "resilience.tex:1522",
+    "resilience.md:798"
    ],
    "value": 0.94139503462253
   },
@@ -4467,8 +4467,8 @@
    "source": "paper_table_full.csv[Unicast][Site cost|Wgt avg site cost] / Anycast",
    "text": "0.953",
    "used_at": [
-    "resilience.tex:1556",
-    "resilience.md:801"
+    "resilience.tex:1528",
+    "resilience.md:798"
    ],
    "value": 0.9532173619321062
   },
@@ -5170,8 +5170,8 @@
    "source": "paper_table_full.csv[AnyOpt][Frozen failover|% cong site-fail]",
    "text": "6.55",
    "used_at": [
-    "resilience.tex:1444",
-    "resilience.md:745"
+    "resilience.tex:1416",
+    "resilience.md:742"
    ],
    "value": 6.554
   },
@@ -5187,8 +5187,8 @@
    "source": "paper_table_full.csv[AnyOpt][Frozen failover|% cong site-fail]",
    "text": "\\anyopt",
    "used_at": [
-    "resilience.tex:1443",
-    "resilience.md:745"
+    "resilience.tex:1415",
+    "resilience.md:742"
    ],
    "value": "\\anyopt"
   },
@@ -5218,8 +5218,8 @@
    "source": "paper_table_full.csv[PAINTER][Frozen failover|% cong site-fail]",
    "text": "7.32",
    "used_at": [
-    "resilience.tex:1446",
-    "resilience.md:745"
+    "resilience.tex:1418",
+    "resilience.md:742"
    ],
    "value": 7.3157
   },
@@ -5235,8 +5235,8 @@
    "source": "paper_table_full.csv[SCULPTOR][Frozen failover|% cong site-fail]",
    "text": "3.94",
    "used_at": [
-    "resilience.tex:1439",
-    "resilience.md:745"
+    "resilience.tex:1411",
+    "resilience.md:742"
    ],
    "value": 3.938
   },
@@ -5252,12 +5252,12 @@
    "source": "paper_table_full.csv[SCULPTOR][Frozen failover|% cong site-fail] vs paper_table_full.csv[AnyOpt][Frozen failover|% cong site-fail]",
    "text": "40",
    "used_at": [
-    "resilience.tex:239",
-    "resilience.tex:349",
-    "resilience.tex:1441",
-    "resilience.md:160",
-    "resilience.md:191",
-    "resilience.md:745"
+    "resilience.tex:235",
+    "resilience.tex:336",
+    "resilience.tex:1413",
+    "resilience.md:156",
+    "resilience.md:189",
+    "resilience.md:742"
    ],
    "value": 39.914555996338116
   },
@@ -5273,8 +5273,8 @@
    "source": "paper_table_full.csv[SCULPTOR][Frozen failover|% cong site-fail] vs paper_table_full.csv[PAINTER][Frozen failover|% cong site-fail]",
    "text": "46",
    "used_at": [
-    "resilience.tex:1445",
-    "resilience.md:745"
+    "resilience.tex:1417",
+    "resilience.md:742"
    ],
    "value": 46.17056467597085
   },
@@ -5360,8 +5360,8 @@
    "source": "paper_table_full.csv[PAINTER][Frozen failover|Site latency (ms)] vs paper_table_full.csv[One-per-peering][Frozen failover|Site latency (ms)]",
    "text": "8.5",
    "used_at": [
-    "resilience.tex:1447",
-    "resilience.md:745"
+    "resilience.tex:1419",
+    "resilience.md:742"
    ],
    "value": 8.454700000000003
   },
@@ -5391,8 +5391,8 @@
    "source": "paper_table_full.csv[SCULPTOR][Frozen failover|Site latency (ms)] vs paper_table_full.csv[One-per-peering][Frozen failover|Site latency (ms)]",
    "text": "4.1",
    "used_at": [
-    "resilience.tex:1438",
-    "resilience.md:745"
+    "resilience.tex:1410",
+    "resilience.md:742"
    ],
    "value": 4.067099999999996
   },
@@ -5632,8 +5632,8 @@
    "source": "paper_table_full.csv[PAINTER][Frozen failover|% cong fail]",
    "text": "0.19",
    "used_at": [
-    "resilience.tex:1436",
-    "resilience.md:745"
+    "resilience.tex:1408",
+    "resilience.md:742"
    ],
    "value": 0.1879
   },
@@ -5649,8 +5649,8 @@
    "source": "paper_table_full.csv[SCULPTOR][Frozen failover|% cong fail]",
    "text": "0.04",
    "used_at": [
-    "resilience.tex:1433",
-    "resilience.md:745"
+    "resilience.tex:1405",
+    "resilience.md:742"
    ],
    "value": 0.0369
   },
@@ -5736,8 +5736,8 @@
    "source": "paper_table_full.csv[PAINTER][Frozen failover|Latency (ms)] vs paper_table_full.csv[One-per-peering][Frozen failover|Latency (ms)]",
    "text": "11.0",
    "used_at": [
-    "resilience.tex:1435",
-    "resilience.md:745"
+    "resilience.tex:1407",
+    "resilience.md:742"
    ],
    "value": 11.013299999999997
   },
@@ -5767,8 +5767,8 @@
    "source": "paper_table_full.csv[SCULPTOR][Frozen failover|Latency (ms)] vs paper_table_full.csv[One-per-peering][Frozen failover|Latency (ms)]",
    "text": "4.8",
    "used_at": [
-    "resilience.tex:1432",
-    "resilience.md:745"
+    "resilience.tex:1404",
+    "resilience.md:742"
    ],
    "value": 4.787800000000001
   },
@@ -5882,8 +5882,8 @@
    "source": "deployment_scaling_summary.csv[Latency/Subopt normal (ms)][best_baseline_at_max]",
    "text": "4.7",
    "used_at": [
-    "resilience.tex:1631",
-    "resilience.md:853"
+    "resilience.tex:1603",
+    "resilience.md:850"
    ],
    "value": 4.704
   },
@@ -5899,8 +5899,8 @@
    "source": "deployment_scaling_summary.csv[Latency/Subopt normal (ms)][best_baseline_name]",
    "text": "\\painter",
    "used_at": [
-    "resilience.tex:1632",
-    "resilience.md:853"
+    "resilience.tex:1604",
+    "resilience.md:850"
    ],
    "value": "\\painter"
   },
@@ -5916,8 +5916,8 @@
    "source": "deployment_scaling_summary.csv[Latency/Subopt normal (ms)][gap_change_pct]",
    "text": "58",
    "used_at": [
-    "resilience.tex:1634",
-    "resilience.md:853"
+    "resilience.tex:1606",
+    "resilience.md:850"
    ],
    "value": 57.5
   },
@@ -5933,8 +5933,8 @@
    "source": "deployment_scaling_summary.csv[Latency/Subopt normal (ms)][sculptor_at_max]",
    "text": "1.1",
    "used_at": [
-    "resilience.tex:1629",
-    "resilience.md:853"
+    "resilience.tex:1601",
+    "resilience.md:850"
    ],
    "value": 1.143
   },
@@ -5950,8 +5950,8 @@
    "source": "deployment_scaling_summary.csv[Latency/Subopt normal (ms)][sculptor_leads]",
    "text": "6/6",
    "used_at": [
-    "resilience.tex:1636",
-    "resilience.md:853"
+    "resilience.tex:1608",
+    "resilience.md:850"
    ],
    "value": "6/6"
   },
@@ -5967,8 +5967,8 @@
    "source": "prefix_scaling_summary.csv[Failure robustness/% cong site-fail][gap_at_max]",
    "text": "11.1",
    "used_at": [
-    "resilience.tex:1651",
-    "resilience.md:856"
+    "resilience.tex:1623",
+    "resilience.md:853"
    ],
    "value": 11.073
   },
@@ -5984,8 +5984,8 @@
    "source": "prefix_scaling_summary.csv[Failure robustness/% cong site-fail][gap_at_min]",
    "text": "34.3",
    "used_at": [
-    "resilience.tex:1650",
-    "resilience.md:856"
+    "resilience.tex:1622",
+    "resilience.md:853"
    ],
    "value": 34.259
   },
@@ -6001,8 +6001,8 @@
    "source": "prefix_scaling_summary.csv[Failure robustness/Subopt ingress-fail (ms)][gap_at_max]",
    "text": "7.7",
    "used_at": [
-    "resilience.tex:1648",
-    "resilience.md:856"
+    "resilience.tex:1620",
+    "resilience.md:853"
    ],
    "value": 7.662
   },
@@ -6018,8 +6018,8 @@
    "source": "prefix_scaling_summary.csv[Failure robustness/Subopt ingress-fail (ms)][gap_at_min]",
    "text": "27.7",
    "used_at": [
-    "resilience.tex:1646",
-    "resilience.md:856"
+    "resilience.tex:1618",
+    "resilience.md:853"
    ],
    "value": 27.725
   },
@@ -6035,8 +6035,8 @@
    "source": "prefix_scaling_summary.csv[Latency/Subopt normal (ms)][best_baseline_name]",
    "text": "\\painter",
    "used_at": [
-    "resilience.tex:1641",
-    "resilience.md:856"
+    "resilience.tex:1613",
+    "resilience.md:853"
    ],
    "value": "\\painter"
   },
@@ -6052,8 +6052,8 @@
    "source": "prefix_scaling_summary.csv[Latency/Subopt normal (ms)][gap_at_max]",
    "text": "1.9",
    "used_at": [
-    "resilience.tex:1644",
-    "resilience.md:856"
+    "resilience.tex:1616",
+    "resilience.md:853"
    ],
    "value": 1.924
   },
@@ -6069,8 +6069,8 @@
    "source": "prefix_scaling_summary.csv[Latency/Subopt normal (ms)][gap_at_min]",
    "text": "5.7",
    "used_at": [
-    "resilience.tex:1642",
-    "resilience.md:856"
+    "resilience.tex:1614",
+    "resilience.md:853"
    ],
    "value": 5.662
   }
