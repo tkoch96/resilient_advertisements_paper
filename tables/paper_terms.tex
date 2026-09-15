@@ -1,0 +1,44 @@
+% Symbols specific to the objective functions. Core notation is in
+% \cref{tab:notation} (methodology); nothing is repeated here.
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\multicolumn{2}{@{}l}{\emph{Shared by all objectives}} \\
+$\mathit{V}$                          & Total demand, $\sum_\unenclug \mathit{v(\unenclug)}$ \\
+$\mathit{f_l(R,w)}$                   & Load on link $\mathit{l}$ \\
+$\Lambda(\mathit{R,w})$               & Traffic-weighted mean latency \\
+$\mathit{G_0}$                        & The latency-and-MLU objective (\cref{eq:obj-latmlu}) \\
+\addlinespace
+\multicolumn{2}{@{}l}{\emph{Latency and MLU (\cref{eq:obj-latmlu})}} \\
+$\mathit{M}$                          & Maximum link utilization \\
+$\beta$                               & Weight on utilization vs.\ propagation delay \\
+\addlinespace
+\multicolumn{2}{@{}l}{\emph{Failover (\cref{eq:obj-dtf,eq:obj-stf})}} \\
+$\mathit{F_l}$                        & Failure mask zeroing advertisements on $\mathit{l}$ \\
+$\mathit{A_l}$                        & $\mathit{A} * \mathit{F_l}$: configuration with $\mathit{l}$ withdrawn \\
+$\alpha_\mathit{l}$                   & Weight on the failure of $\mathit{l}$, \eg its likelihood \\
+$\mathit{w^{(l)}}$                    & Post-failure allocation (dynamic failover only) \\
+\addlinespace
+\multicolumn{2}{@{}l}{\emph{Latency-sensitive services (\cref{eq:obj-lss})}} \\
+$\mathcal{L}^{*}(\unenclug)$          & \ug's lowest-latency reachable ingress \\
+$\tau$                                & Latency budget above $\mathcal{L}^{*}$ (10 ms) \\
+\addlinespace
+\multicolumn{2}{@{}l}{\emph{Multiple traffic classes (\cref{eq:obj-prios})}} \\
+$\mathit{w_H}, \mathit{w_B}$          & High-priority and bulk allocations \\
+$\mathit{V_H}$, $\mathit{f_l^H}$      & High-priority demand and per-link load \\
+$\gamma$                              & Weight on high-priority congestion vs.\ latency \\
+$\kappa$                              & Cap on per-link overload \\
+\addlinespace
+\multicolumn{2}{@{}l}{\emph{Per-site traffic cost (\cref{eq:obj-sitecost})}} \\
+$\mathit{site(l)}$                    & Site terminating link $\mathit{l}$ \\
+$\rho_\mathit{s}$                     & Unit traffic cost at site $\mathit{s}$ \\
+$\delta$                              & Weight on site cost vs.\ latency \\
+\bottomrule
+\end{tabular}
+\caption{Symbols used in the objective functions. Core notation appears in
+\Cref{tab:useful_definitions}.}
+\label{tab:term_definition}
+\end{table}

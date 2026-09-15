@@ -1,0 +1,20 @@
+% Compact single-column version. Original longer version: paper_notation_full.tex.bak
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}ll@{}}
+\toprule
+$\unenclug$                          & Users that route alike (\eg a /24) \\
+$\mathit{v(\unenclug)}$              & Traffic volume of \ug \\
+$\mathit{c(l)}$                      & Capacity of ingress link $\mathit{l}$ \\
+$\mathcal{L}(\unenclug, \mathit{l})$ & Latency for \ug via link $\mathit{l}$ \\
+$\mathit{A(p,l)}$                    & 1 if prefix $\mathit{p}$ is advertised over link $\mathit{l}$ \\
+$\mathit{w(p,\unenclug)}$            & Traffic from \ug directed to prefix $\mathit{p}$ \\
+$\mathit{R(A)(p,\unenclug)}$         & Ingress link \ug uses for $\mathit{p}$ ($\emptyset$ if none) \\
+$\mathit{G(R(A),w)}$                 & Objective value under $\mathit{A}$ and $\mathit{w}$ \\
+\bottomrule
+\end{tabular}
+\caption{Notation used throughout \Cref{sec:methodology}.}
+\label{tab:useful_definitions}
+\end{table}

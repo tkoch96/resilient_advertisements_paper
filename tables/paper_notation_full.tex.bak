@@ -1,0 +1,34 @@
+% Core notation, for reference while reading the methodology.
+% Per-objective symbols are in the fuller table, \cref{tab:term_definition}.
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\multicolumn{2}{@{}l}{\emph{Inputs}} \\
+$\unenclug$                           & User group: users that route alike (\eg a /24) \\
+$\mathit{v(\unenclug)}$               & Traffic volume of \ug \\
+$\mathit{c(l)}$                       & Capacity of ingress link $\mathit{l}$ \\
+$\mathcal{L}\mathit{(\unenclug, l)}$  & Latency for \ug across $\mathit{l}$ \\
+$\mathit{G}$                          & The \servprod's objective, \eg average latency \\
+\addlinespace
+\multicolumn{2}{@{}l}{\emph{Decisions}} \\
+$\mathit{p}$, $\mathit{l}$            & Prefix; ingress link \\
+$\mathit{A}$                          & Advertisement configuration (binary) \\
+$\mathit{A(p,l)}$                     & 1 if prefix $\mathit{p}$ is advertised over link $\mathit{l}$ \\
+$\mathit{w(p, \unenclug)}$            & Traffic from \ug directed towards prefix $\mathit{p}$ \\
+\addlinespace
+\multicolumn{2}{@{}l}{\emph{Routing}} \\
+$\mathit{R}$                          & Routing function: advertisements $\rightarrow$ routes \\
+$\mathit{R(A)(p,\unenclug)}$          & Ingress link \ug uses for $\mathit{p}$ under $\mathit{A}$ \\
+$\mathit{e(\cdot)}$                   & 1 if that route exists, 0 otherwise \\
+\addlinespace
+\multicolumn{2}{@{}l}{\emph{Search}} \\
+$\mathit{\tilde{A}}$                  & Relaxed configuration; $\mathit{A}$ is $\mathit{\tilde{A}}$ thresholded at 0.5 \\
+$\mathit{K}$                          & \mc routing samples per gradient entry \\
+\bottomrule
+\end{tabular}
+\caption{Notation used throughout \Cref{sec:methodology}.}
+\label{tab:useful_definitions}
+\end{table}
