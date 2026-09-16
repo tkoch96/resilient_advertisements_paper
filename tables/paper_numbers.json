@@ -1,6 +1,6 @@
 {
  "code_sha": "69121ae",
- "generated": "2026-09-15T21:45",
+ "generated": "2026-09-15T21:46",
  "keys": {
   "dtf.diurnal.all.intensity.mean.anycast": {
    "doc": "Dynamic Traffic Failover objective (\\dtf); diurnal traffic swing: every metro follows the measured daily profile; averaged over ALL users (unaffected users included; congested volume excluded from latency averages); traffic multiplier the deployment absorbs before any link congests; mean over the evaluated deployments (the table value); Anycast: a single prefix everywhere",
