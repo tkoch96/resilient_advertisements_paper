@@ -5,25 +5,25 @@
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|l|rr|rrr|rr|r|rr|r|}
 \hline
-Objectives & \multicolumn{2}{c|}{\parbox{3.4cm}{\centering \latmlu \\ (\cref{sec:latmlu_on_internet,sec:eval-steady-state})}} & \multicolumn{3}{c|}{\parbox{5.1cm}{\centering \dtf \\ (\cref{sec:failure_robustness_on_internet,sec:eval-failure})}} & \multicolumn{2}{c|}{\parbox{3.4cm}{\centering \stf \\ (\cref{sec:eval_stf})}} & \multicolumn{1}{c|}{\parbox{1.9cm}{\centering \small \lss \\ (\cref{sec:eval_lss})}} & \multicolumn{2}{c|}{\parbox{3.4cm}{\centering \prios \\ (\cref{sec:eval-multiple-traffic-classes})}} & \multicolumn{1}{c|}{\parbox{1.9cm}{\centering \small \sitecost \\ (\cref{sec:eval-per-site-costs})}} \\
+\textbf{Objectives} & \multicolumn{2}{c|}{\parbox{3.4cm}{\centering \latmlu \\ (\cref{sec:latmlu_on_internet,sec:eval-steady-state})}} & \multicolumn{3}{c|}{\parbox{5.1cm}{\centering \dtf \\ (\cref{sec:failure_robustness_on_internet,sec:eval-failure})}} & \multicolumn{2}{c|}{\parbox{3.4cm}{\centering \stf \\ (\cref{sec:eval_stf})}} & \multicolumn{1}{c|}{\parbox{1.9cm}{\centering \small \lss \\ (\cref{sec:eval_lss})}} & \multicolumn{2}{c|}{\parbox{3.4cm}{\centering \prios \\ (\cref{sec:eval-multiple-traffic-classes})}} & \multicolumn{1}{c|}{\parbox{1.9cm}{\centering \small \sitecost \\ (\cref{sec:eval-per-site-costs})}} \\
 \hline
-Method & \makecell{Latency\\(ms)} & \makecell{Maximum link\\utilization\\(vs anycast)} & \makecell{Ingress fail:\\latency (ms) / \%\\cong} & \makecell{Site fail: latency\\(ms) / \% cong} & \makecell{Flash\\Crowd/Diurnal\\Intensity (vs\\anycast)} & \makecell{Ingress fail:\\latency (ms) / \%\\cong} & \makecell{Site fail: latency\\(ms) / \% cong} & \makecell{\% beyond\\10ms of\\optimal} & \makecell{HPrio\\latency (ms)} & \makecell{Crit bulk\\ratio} & \makecell{Wgt avg site\\cost (vs\\anycast)} \\
+\makecell[l]{\textbf{Baseline} \\ \textbf{Solution}} & \makecell{Average\\Latency (ms)} & \makecell{Maximum link\\utilization\\(vs anycast)} & \makecell{Ingress fail:\\latency (ms) / \%\\cong} & \makecell{Site fail: latency\\(ms) / \% cong} & \makecell{Flash\\Crowd/Diurnal\\Intensity (vs\\anycast)} & \makecell{Ingress fail:\\latency (ms) / \%\\cong} & \makecell{Site fail: latency\\(ms) / \% cong} & \makecell{\% beyond\\10ms of\\optimal} & \makecell{HPrio\\latency (ms)} & \makecell{Crit bulk\\ratio} & \makecell{Wgt avg site\\cost (vs\\anycast)} \\
 \hline
-{\footnotesize \expensive$^{1}$} & 29.1 & 0.966 & 29.3 / 0.00 & 30.8 / 5.55 & 1.37 / 1.44 & 29.2 / 0.00 & 32.1 / 0.50 & 12.9 & 29.0 & 5.62 & 0.918 \\
+{\footnotesize \expensive$^{1}$} & \cellcolor[HTML]{92C5DE}29.1 & \cellcolor[HTML]{92C5DE}0.966 & \cellcolor[HTML]{92C5DE}29.3 / 0.00 & \cellcolor[HTML]{92C5DE}30.8 / 5.55 & \cellcolor[HTML]{92C5DE}1.37 / 1.44 & \cellcolor[HTML]{92C5DE}29.2 / 0.00 & \cellcolor[HTML]{92C5DE}32.1 / 0.50 & \cellcolor[HTML]{92C5DE}12.9 & \cellcolor[HTML]{92C5DE}29.0 & \cellcolor[HTML]{92C5DE}5.62 & \cellcolor[HTML]{92C5DE}0.918 \\
 \hline
-\sparse & \textbf{30.4} & \textbf{0.967} & \textbf{30.4} / \textbf{0.00} & \textbf{32.2} / \textbf{5.14} & \textbf{1.26} / \textbf{1.32} & \textbf{34.0} / \textbf{0.04} & \textbf{36.2} / \textbf{3.94} & \textbf{16.3} & \textbf{31.3} & \textbf{4.35} & \textbf{0.941} \\
+\sparse & \cellcolor[HTML]{9ECBE1}\textbf{30.4} & \cellcolor[HTML]{9BC9E0}\textbf{0.967} & \cellcolor[HTML]{97C8DF}\textbf{30.4} / \textbf{0.00} & \cellcolor[HTML]{9AC9E0}\textbf{32.2} / \textbf{5.14} & \cellcolor[HTML]{CAE1EC}\textbf{1.26} / \textbf{1.32} & \cellcolor[HTML]{B1D4E6}\textbf{34.0} / \textbf{0.04} & \cellcolor[HTML]{E3EDF2}\textbf{36.2} / \textbf{3.94} & \cellcolor[HTML]{B5D6E7}\textbf{16.3} & \cellcolor[HTML]{A6CFE3}\textbf{31.3} & \cellcolor[HTML]{C2DDEA}\textbf{4.35} & \cellcolor[HTML]{CBE1EC}\textbf{0.941} \\
 \hline
-\painter & 33.7 & 0.995 & 34.1 / 0.00 & 36.5 / 11.79 & 1.04 / 1.08 & 40.3 / 0.19 & 40.6 / 7.32 & 21.0 & 33.7 & 1.29 & 0.980 \\
+\painter & \cellcolor[HTML]{BCDAE9}33.7 & \cellcolor[HTML]{F5BEA5}0.995 & \cellcolor[HTML]{A7D0E3}34.1 / 0.00 & \cellcolor[HTML]{F6DED3}36.5 / 11.79 & \cellcolor[HTML]{F5BEA6}1.04 / 1.08 & \cellcolor[HTML]{F5F6F6}40.3 / 0.19 & \cellcolor[HTML]{F6D0BF}40.6 / 7.32 & \cellcolor[HTML]{E5EEF2}21.0 & \cellcolor[HTML]{BCDAE8}33.7 & \cellcolor[HTML]{F5C5AF}1.29 & \cellcolor[HTML]{F5CDBB}0.980 \\
 \hline
-\ucast & 34.2 & 0.978 & 34.9 / 0.00 & 36.7 / 7.31 & 1.22 / 1.26 & 51.9 / 0.38 & 49.7 / 6.58 & 24.0 & 34.2 & 2.74 & 0.953 \\
+\ucast & \cellcolor[HTML]{C1DCEA}34.2 & \cellcolor[HTML]{D8E8EF}0.978 & \cellcolor[HTML]{ABD2E4}34.9 / 0.00 & \cellcolor[HTML]{F6DDD2}36.7 / 7.31 & \cellcolor[HTML]{E4EEF2}1.22 / 1.26 & \cellcolor[HTML]{F4A582}51.9 / 0.38 & \cellcolor[HTML]{F4A582}49.7 / 6.58 & \cellcolor[HTML]{F7EDE8}24.0 & \cellcolor[HTML]{C0DCE9}34.2 & \cellcolor[HTML]{F7F1EF}2.74 & \cellcolor[HTML]{E9F0F3}0.953 \\
 \hline
-\anyopt & 46.2 & 0.999 & 46.2 / 0.26 & 35.0 / 22.17 & 1.00 / 1.04 & 48.4 / 0.16 & 46.9 / 6.55 & 31.8 & 46.1 & 1.19 & 0.992 \\
+\anyopt & \cellcolor[HTML]{F5CAB7}46.2 & \cellcolor[HTML]{F4AA89}0.999 & \cellcolor[HTML]{F6D1C1}46.2 / 0.26 & \cellcolor[HTML]{F6E5DD}35.0 / 22.17 & \cellcolor[HTML]{F4AD8D}1.00 / 1.04 & \cellcolor[HTML]{F6E0D7}48.4 / 0.16 & \cellcolor[HTML]{F4B295}46.9 / 6.55 & \cellcolor[HTML]{F4AC8C}31.8 & \cellcolor[HTML]{F5CEBC}46.1 & \cellcolor[HTML]{F5C2AB}1.19 & \cellcolor[HTML]{F5B598}0.992 \\
 \hline
-\acast & 51.2 & 1.000 & 51.8 / 0.37 & 49.6 / 6.63 & 1.00 / 1.00 & 51.9 / 0.38 & 49.7 / 6.58 & 32.7 & 51.7 & 0.25 & 1.000 \\
+\acast & \cellcolor[HTML]{F4A582}51.2 & \cellcolor[HTML]{F4A582}1.000 & \cellcolor[HTML]{F4A582}51.8 / 0.37 & \cellcolor[HTML]{F4A582}49.6 / 6.63 & \cellcolor[HTML]{F4A582}1.00 / 1.00 & \cellcolor[HTML]{F4A582}51.9 / 0.38 & \cellcolor[HTML]{F4A582}49.7 / 6.58 & \cellcolor[HTML]{F4A582}32.7 & \cellcolor[HTML]{F4A582}51.7 & \cellcolor[HTML]{F4A582}0.25 & \cellcolor[HTML]{F4A582}1.000 \\
 \hline
 \multicolumn{12}{l}{\footnotesize $^{1}$ An unrealistic optimal, included for comparison.} \\
 \end{tabular}
 }
-\caption{Performance of all methods across objectives. \sparse outperforms all other feasible methods on every metric. Averages are shown, but \sparse has a 100\% win rate and nearly always wins by a consistent percentage.}
+\caption{\sparse outperforms every feasible solution on every metric.}
 \label{tab:paper_table}
 \end{table*}
